@@ -4,10 +4,22 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
 	<title>문서 제목</title>
-	<link rel="stylesheet" href="reset.css">
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.bxslider.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider').bxSlider({
+				pager:false,
+				auto:true
+			});
+		});
+	</script>
 </head>
 <body>
+<!-- header -->
 	<header id="main_header">
 		<div class="wrap clearfix">
 			<div class="util_menu">
@@ -27,8 +39,9 @@
 				</ul>
 			</div>
 		</div>
-
 	</header>
+
+<!-- main menu -->
 	<div id="main_menu">
 		<div class="logo clearfix">
 			<ul class="left">
@@ -49,32 +62,59 @@
 		</div>			
 	</div>
 
-	<div id="content_wrapper">
-
-		<div class="content_wrap">
+<!-- content -->
+	<div id="content">
+		<div class="text_wrap">
 			<ul class="text">
 				<li>
 					<p>함께 나누며 세상을 이끌어</p>
 					<p>세계로 향하는 한국대학교</p>
 				</li>
 			</ul>
-			<ul class="icon clearfix">
-				<li><a href="#">menu1</a></li>
-				<li><a href="#">menu2</a></li>
-				<li><a href="#">menu3</a></li>
-				<li><a href="#">menu4</a></li>
-			</ul>
-			<ul class="content clearfix">
-				<li><a href="#">이미지1</a></li>
-				<li><a href="#">이미지2</a></li>
-				<li><a href="#">이미지3</a></li>
-				<li><a href="#">이미지4</a></li>
-				<li><a href="#">이미지5</a></li>
-				<li><a href="#">이미지6</a></li>
-				<li><a href="#">이미지7</a></li>
-				<li><a href="#">이미지8</a></li>
+		</div>
+		<div class="icon_wrap">
+			<ul class="icon">
+				<li><img src="./item/icon1.png" alt=""></li>
+				<li><img src="./item/icon2.png" alt=""></li>
+				<li><img src="./item/icon3.png" alt=""></li>
+				<li><img src="./item/icon4.png" alt=""></li><br>
+				<li><a href="#">입학절차안내</a></li>
+				<li><a href="#">입학설명회</a></li>
+				<li><a href="#">장학제도</a></li>
+				<li><a href="#">증명서발급</a></li>
 			</ul>
 		</div>
-	</div>
+
+		<div class="content_wrap">
+			<ul class="content clearfix">
+				<li>
+					<ul class="slider">
+						<li>						
+							<img src="./item/img2.jpg" alt="">
+							<p>한국<span class="b_none">에서</span><br>
+							시작<span class="b_none">하는</span><br>
+							<span class="b_none">새로운</span> 꿈</p>
+							<div class="btn">자세히보기 ▶</div>
+						</li>
+						<li>						
+							<img src="./item/img2.jpg" alt="">
+							<p>한국<span class="b_none">에서</span><br>
+							시작<span class="b_none">하는</span><br>
+							<span class="b_none">새로운</span> 꿈</p>
+							<div class="btn">자세히보기 ▶</div>
+						</li>
+					</ul>
+				</li>
+				<li><img src="./item/img3.jpg" alt=""></li>
+				<li>HOT LINK</li>
+				<li>공지사항</li>
+				<li>SNS NEWS<br><img src="./item/img4.jpg" alt=""></li>
+				<li><img src="./item/img5.jpg" alt="">캠퍼스 투어</li>
+				<li><img src="./item/img6.jpg" alt=""></li>
+				<li><img src="./item/img7.jpg" alt=""></li>
+			</ul>
+		</div>
+	</div>	
+
 </body>
 </html>
