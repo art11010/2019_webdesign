@@ -30,7 +30,7 @@
 .logo li, .logo h1, .logo p{float: left;}
 .logo .left{}
 .logo .left>li{width: 54px;height: 55px;text-indent: -9999px;
-	background-image: url(../item/홈페이지시안연습.jpg);
+	background-image: url(../item/page.jpg);
 	background-position: -150px -70px;
 	position: absolute;left: 10px;top: 10px;}
 .logo h1{position: absolute;left: 85px;top: 5px;
@@ -185,14 +185,13 @@ text-align: center;}
 	border: 0.5px solid #fff;padding: 10px 20px;}
 
 	/*slider2*/
-	/*.img2 .bx-wrapper .bx-pager {padding: 0;height: 450px;}*/
 	.img2 .bx-wrapper .bx-pager {top: 85%;}
 	.img2 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 	.img2 .bx-wrapper .bx-pager.bx-default-pager a.active,
 	.img2 .bx-wrapper .bx-pager.bx-default-pager a:focus {
 	    background: #00f;}
 
-	.img7 .bx-wrapper .bx-pager {top: -5px;right: -385px;}
+	.img7 .bx-wrapper .bx-pager {top: -5px; line-height: right; padding-right:10px;}
 	.img7 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 	.img7 .bx-wrapper .bx-pager.bx-default-pager a.active,
 	.img7 .bx-wrapper .bx-pager.bx-default-pager a:focus {
@@ -220,9 +219,12 @@ text-align: center;}
 	padding-right: 70px;color: #6a6a6a;
 	font-size: 12px;}
 
-.bottom_menu .up{position: absolute;top: 0;right: 0;}
-.bottom_menu .down{position: absolute;bottom: 0;right: 0;}
 
+	/*slider3*/
+	.bottom_menu .li2 li{height: 60px;}
+
+	.bottom_menu .up{position:absolute;top: 0px; right: 0;cursor: pointer;}
+	.bottom_menu .down{position:absolute;bottom: 0px; right: 0;cursor: pointer;}
 /*footer*/
 #main_footer{width: 1200px;height:165px;margin: 0px auto;
 	background-color: #fff;margin-top:35px;}
