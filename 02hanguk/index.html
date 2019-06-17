@@ -14,11 +14,23 @@
 			$('.slider').bxSlider({
 				auto:true
 			});
-		});
-		$(document).ready(function(){
 			$('.slider2').bxSlider({
 				auto:true,
 				controls:false
+			});
+			var yeji = $('.slider3').bxSlider({
+				auto:true,
+				pager:false,
+				controls:false,
+				mode:'vertical'
+			});
+			$('.up').click(function(){
+				yeji.goToPrevSlide();
+				return false
+			});
+			$('.down').click(function(){
+				yeji.goToNextSlide();
+				return false
 			});
 		});
 	</script>
@@ -47,25 +59,26 @@
 	</header>
 
 <!-- main menu -->
-	<div id="main_menu">
-		<div class="logo clearfix">
-			<ul class="left">
-				<li><a href="">대학로고</a></li>
-				<h1>한국대학교</h1>
-				<p>HANGUK UNIVERSITY</p>
-			</ul>
-		</div>
-		<div class="menu clearfix">
-			<ul class="right">
-				<li><a href="#">대학소개</a></li>
-				<li><a href="#">학과소개</a></li>
-				<li><a href="#">학사안내</a></li>
-				<li><a href="#">대학생활</a></li>
-				<li><a href="#">학생지원센터</a></li>
-				<li><img src="./item/menu.jpg" alt=""></li>
-			</ul>
-		</div>			
-	</div>
+		<nav id="main_menu" class="cleafix">
+			<div class="logo clearfix">
+				<ul class="left">
+					<li><a href="">대학로고</a></li>
+					<h1>한국대학교</h1>
+					<p>HANGUK UNIVERSITY</p>
+				</ul>
+			</div>
+			<div class="menu clearfix">
+				<ul class="right">
+					<li><a href="#">대학소개</a></li>
+					<li><a href="#">학과소개</a></li>
+					<li><a href="#">학사안내</a></li>
+					<li><a href="#">대학생활</a></li>
+					<li><a href="#">학생지원센터</a></li>
+					<li><img src="./item/menu.jpg" alt=""></li>
+				</ul>
+			</div>			
+		</nav>
+	</header>
 
 <!-- content -->
 	<div id="content">
@@ -79,14 +92,18 @@
 		</div>
 		<div class="icon_wrap">
 			<ul class="icon">
-				<li><img src="./item/icon1.png" alt=""></li>
-				<li><img src="./item/icon2.png" alt=""></li>
-				<li><img src="./item/icon3.png" alt=""></li>
-				<li><img src="./item/icon4.png" alt=""></li><br>
-				<li><a href="#">입학절차안내</a></li>
-				<li><a href="#">입학설명회</a></li>
-				<li><a href="#">장학제도</a></li>
-				<li><a href="#">증명서발급</a></li>
+				<li>
+					<img src="./item/icon1.png" alt=""><a href="#">입학절차안내</a>
+				</li>
+				<li>
+					<img src="./item/icon2.png" alt=""><a href="#">입학설명회</a>
+				</li>
+				<li>
+					<img src="./item/icon3.png" alt=""><a href="#">장학제도</a>
+				</li>
+				<li>
+					<img src="./item/icon4.png" alt=""><a href="#">증명서발급</a>
+				</li>
 			</ul>
 		</div>
 
@@ -149,16 +166,24 @@
 				<li class="notice">
 					<h2>공지사항</h2>
 					<div class="text clearfix">
-						<div>
-							<p>· [공지] 한국대학교 웹진...</p>
-							<span>2016-06-12</span>
-							<p>· [보도] 우수대학교 선정 수상</p>
-							<span>2016-06-17</span>
-							<p>· [공지] 대학입시 설명회</p>
-							<span>2016-06-05</span>
-							<p>· [공지] 2016학년 1학기 성적...</p>
-							<span>2016-05-14</span>
-						</div>
+						<ul>
+							<li>
+								<p>· [공지] 한국대학교 웹진...</p>
+								<span>2016-06-12</span>
+							</li>
+							<li>
+								<p>· [보도] 우수대학교 선정 수상</p>
+								<span>2016-06-17</span>
+							</li>
+							<li>
+								<p>· [공지] 대학입시 설명회</p>
+								<span>2016-06-05</span>
+							</li>
+							<li>
+								<p>· [공지] 2016학년 1학기 성적...</p>
+								<span>2016-05-14</span>
+							</li>
+						</ul>
 					</div>
 				</li>
 
@@ -229,9 +254,18 @@
 				<span>< 2016.07 ></span>
 			</li>
 			<li class="li2">
-				<p>2016 - 1학기 성적 열람 및 상담 신청</p>
-				<span>성적열람 및 상담신청은 본인이 수강한
-				교과목 설문조사를 모두 마친 후 확인이...</span>
+				<ul class="slider3">
+					<li>
+						<p>2016 - 1학기 성적 열람 및 상담 신청</p>
+						<span>성적열람 및 상담신청은 본인이 수강한
+						교과목 설문조사를 모두 마친 후 확인이...</span>
+					</li>
+					<li>
+						<p>2016 - 1학기 성적 열람 및 상담 신청</p>
+						<span>성적열람 및 상담신청은 본인이 수강한
+						교과목 설문조사를 모두 마친 후 확인이...</span>
+					</li>
+				</ul>
 			</li>
 			<img class="up" src="./item/up.jpg" alt="">
 			<img class="down" src="./item/down.jpg" alt="">
@@ -262,7 +296,7 @@
 				<li>고객센터 : 1234-5678
 					<span>FAX : 02-1234-5678 HANGUNKUNIVERSITY</span>
 					<span>@HANGUK.COM</span></li>
-				<li class="color">COPYRIGHT ⓒ HANGUK. ALL RIGHTS RESERVED.</li>
+				<li class="color">COPYRIGHT &copy; HANGUK. ALL RIGHTS RESERVED.</li>
 			</ul>
 		</div>
 	</footer>
