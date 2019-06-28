@@ -76,6 +76,14 @@
 	.left li:nth-child(2){background-color: #006599;}
 	.left li:nth-child(3),
 	.left li:nth-child(4){background-color: #0099cb;}
+	
+	.left li:nth-child(2):hover{background-color: #fff;}
+	.left li:nth-child(3):hover{background-color: #fff;}
+	.left li:nth-child(4):hover{background-color: #fff;}
+
+	.left li:nth-child(2):hover a{color: #404040;}
+	.left li:nth-child(3):hover a{color: #404040;}
+	.left li:nth-child(4):hover a{color: #404040;}
 
 	.right{float: right;width: 350px;margin: 0 auto;}
 	.right li{margin: 10px 30px;}
