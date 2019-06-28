@@ -57,7 +57,7 @@
 	text-align:center;line-height:60px;
 	border-right: 1px solid #e2e2e2;}
 .main_menu li:first-child{border-left:1px solid #e2e2e2;}
-.main_menu li:hover a{background-color: #bbb; color: #fff;}
+.main_menu li:hover a{color: #065da2;}
 
 
 /*content*/
