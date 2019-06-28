@@ -1,6 +1,6 @@
 @charset "utf-8";
-body{width: 100%;height: 1390px;
-	background:url(../item/02.png) no-repeat 100% 60%,
+.wrapper{width: 100%;height: 1390px;
+	background:url(../item/02.png) no-repeat 80% 50%,
 	url(../item/01.jpg) no-repeat center;}
 #main_header{}
 .wrap{width:100%;height: 90px;margin: 0 auto;
@@ -115,14 +115,13 @@ body{width: 100%;height: 1390px;
 	font-weight: bolder;font-size: 1.2em}
 
 /*content02*/ /*16*/ /*932*/ /*233*/
-#content02{width: 980px;margin: 0 auto;margin-top:10px;
-	}
+#content02{width: 980px;margin: 0 auto;}
 
-	.row1{margin-top:10px;position: relative;}
+	.row1{margin-top:16px;position: relative;}
 	.row1 li{float: left;width: 233px; height: 240px;
 		margin-right: 16px;}
 	.row1 .box{width: 233px; height: 65px;
-		position: absolute;bottom: -15px;
+		position: absolute;bottom: 0;
 		background-color: #152630;color: #fff;}
 	.row1 .box p{font-weight:bold;
 		text-align: center;line-height: 65px;}
@@ -130,7 +129,7 @@ body{width: 100%;height: 1390px;
 		color:#70c567; padding-left: 10px;}
 
 
-	.row2{margin-top: 35px;}
+	.row2{margin-top: 16px;}
 	.row2 li{float: left;width: 233px; height: 240px;
 		margin-right: 16px;position: relative;}
 	.row2 li:last-child {margin-right: 0;}
@@ -159,7 +158,7 @@ body{width: 100%;height: 1390px;
 	.row2 .p2 .span_1{color:#47619e;font-size: 0.8em;}
 	.row2 .p2 .span_2{color:#e2a202;}
 
-	.row3{margin-top: 20px;}
+	.row3{margin-top: 16px;}
 	.row3 li{width: 233px;height: 240px; float: left;
 		margin-right: 16px;}
 	.row3 li:last-child {margin-right: 0;}
@@ -196,17 +195,15 @@ body{width: 100%;height: 1390px;
 
 	.row3 .li_4{position: relative;
 		background: url(../item/03_10.jpg) no-repeat;
-		background-position: -135px 50px;}
-	.row3 .li_4{position: relative;
-		background: url(../item/03_10.jpg) no-repeat;
-		background-position: -135px 50px;}
+		background-position: -135px -20px;}
 
 
 /*main_footer*/
 #main_footer{width: 980px;height: 90px;
 	margin: 0 auto;}
-	.text{}
+	.text{margin-top: 30px;}
 	.text ul{}
-	.text li{}
+	.text .li_1{margin-bottom: 7px;}
 	.text a{padding-right: 20px;
-		font-weight: bold;font-size: 0.8em}
+		font-weight: bold;font-size: 0.8em;}
+	.text p{color:#707070;font-size: 0.75em;}
