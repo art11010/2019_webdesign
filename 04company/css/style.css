@@ -3,7 +3,7 @@
 	#header_top{width:1260px;height:50px;background-color:pink;
 		position:absolute;left:50%;margin-left:-630px;
 		top:40px;z-index: 1;}
-	#header_top > h1{float:left;background-color:#f00;}
+	#header_top > img{float:left;_background-color:#f00;}
 	
 	#main_menu{float:right;background-color:#0f0;}
 	#main_menu ul{}
@@ -14,6 +14,7 @@
 /*bxslider*/
 .slider_wrap{height:1010px;}
 	.slider_wrap ul li{height: 1010px;}
+	.slider_wrap li h3{}
 	.slider_wrap li.first{background:url(../images/mainimg01.jpg) no-repeat center;
 	background-size:cover;}
 	.slider_wrap li.second{background:url(../images/mainimg02.jpg) no-repeat center;
