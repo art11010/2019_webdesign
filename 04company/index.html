@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>COMPANY</title>
+	<title>Welch's</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
@@ -11,7 +11,19 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
-			$(".slider").bxSlider();
+			var yeji = $(".slider").bxSlider({
+				auto:true,
+				pager:false,
+				controls:false
+			});
+			$(".prevBtn").click(function(){
+				yeji.goToPrevSlide();
+				return false
+			});
+			$(".nextBtn").click(function(){
+				yeji.goToNextSlide();
+				return false
+			});
 		});
 	</script>
 </head>
@@ -51,8 +63,108 @@
 					</div>
 				</li>
 			</ul>
+			<img class="prevBtn" src="images/btn_prev.png" alt="">
+			<img class="nextBtn" src="images/btn_next.png" alt="">
 		</div>
-		<div class="content"></div>
+		<div class="content">
+			<ul class="clearfix">
+				<!-- 1 -->
+				<li class="content1st">
+					<img src="images/main_icon_01_01.png" alt="뉴스레터">
+					<p>보도 자료</p>
+				</li>
+				<li><img src="images/main_img_01_01.jpg" alt=""></li>
+				<li class="content3st">
+					<h3>뉴스</h3>
+				</li>
+				<li><img src="images/main_img_01_02.jpg" alt=""></li>
+
+				<!-- 2 -->
+				<li class="content5st">
+					<img src="images/main_icon_01_02.png" alt="회사소개">
+					<p>회사 소개</p>
+				</li>
+				<li class="content6st">
+					<img src="images/main_icon_01_03.png" alt="투자정보">
+					<p>투자 정보</p>
+				</li>
+				<li class="content7st">
+					<img src="images/main_img_01_03.jpg" alt="">
+					<div class="card">
+						<img src="images/main_acc_01.png" alt="">
+						<h3>제 5세대 농부와 웰치 소유자</h3>
+						<p>웰치스는 가족 사업입니다.<br>
+						수입의 100%가 우리의 땅에서<br>
+						포도를 재배하는 작은 농부들에게 돌아갑니다.<br></p>
+					</div>
+				</li>
+
+				<!-- 3 -->
+				<li class="content8st">
+					<img src="images/main_img_01_04.jpg" alt="">
+					<div class="card">
+						<h3>자연이 만든</h3>
+						<img class="acc_2" src="images/main_acc_02.png" alt="">
+						<img class="acc_3" src="images/main_acc_03.png" alt="">
+					</div>
+				</li>
+				<li class="content9st">
+					<img src="images/main_img_01_05.jpg" alt="">
+					<div class="card">
+						<p>우리의 노하우와 열정 및<br>
+						끈기로 포도를 재배해</p>
+						<h3>웰치의 제품은<br>
+						특별한 맛을 냅니다.</h3>
+						<img src="images/main_acc_04.png" alt="">
+					</div>
+				</li>
+				<li  class="content10st">
+					<img src="images/main_icon_01_04.png" alt="주요산업">
+					<p>주요 산업</p>
+				</li>
+				
+				<!-- 4 -->
+				<li class="content11st">
+					<img src="images/main_icon_01_04.png" alt="사회공헌활동">
+					<p>사회공헌 활동</p>
+				</li>
+				<li class="content12st">
+					<img src="images/main_img_01_06.jpg" alt="">
+					<div class="card">
+						<img src="images/main_acc_05.png" alt="">
+					</div>
+				</li>
+			</ul>
+		</div>
 	</header>
+	<div id="content">
+		<div class="section">
+			<p>비전</p>
+			<h2>VISION 1010</h2>
+			<ul class="clearfix">
+				<li>
+					<img src="images/content_icon_01.png" alt="">
+					<h3>A. Lorem ipsum.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos laborum dignissimos cum doloribus ullam nisi aperiam expedita rerum, distinctio pariatur ea blanditiis, recusandae, sint itaque reprehenderit architecto illo dolores.</p>
+				</li>
+				<li>
+					<img src="images/content_icon_02.png" alt="">
+					<h3>B. Lorem ipsum.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum amet corporis natus ratione eos, molestiae obcaecati ea dignissimos temporibus ut vero adipisci nihil quia voluptatem, neque, odio vitae impedit.</p>
+				</li>
+				<li>
+					<img src="images/content_icon_03.png" alt="">
+					<h3>C. Lorem ipsum.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam in exercitationem sapiente sunt illo veniam vel. Consequatur eligendi, molestiae, quia cupiditate nisi aspernatur provident maiores doloremque tempora beatae dolor quisquam.</p>
+				</li>
+				<li>
+					<img src="images/content_icon_04.png" alt="">
+					<h3>D. Lorem ipsum.</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maiores animi eaque impedit? Pariatur quidem deserunt voluptates voluptatum reiciendis sed saepe debitis et molestias expedita, totam iure, ratione eveniet eligendi.</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer></footer>
 </body>
 </html>
