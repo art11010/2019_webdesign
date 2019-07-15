@@ -6,14 +6,16 @@
 	<title>Welch's</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
+	<script src="js/wow.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
 			var yeji = $(".slider").bxSlider({
-				auto:true,
-				pager:false,
+				// auto:true,
+				// pager:false,
 				controls:false
 			});
 			$(".prevBtn").click(function(){
@@ -24,7 +26,21 @@
 				yeji.goToNextSlide();
 				return false
 			});
+			var yeji2 = $(".slider2").bxSlider({
+				// auto:true,
+				pager:false,
+				controls:false
+			});
+			$(".prev").click(function(){
+				yeji2.goToPrevSlide();
+				return false
+			});
+			$(".next").click(function(){
+				yeji2.goToNextSlide();
+				return false
+			});
 		});
+		new WOW().init(); 
 	</script>
 </head>
 <body>
@@ -62,6 +78,26 @@
 						</h3>
 					</div>
 				</li>
+				<li class="third">
+					<div class="slider_txt">
+						<p>
+							“PEOPLE WANT TO KNOW WHO GREW THEIR FOOD.
+						</p>
+						<h3>
+							THAT’S US.”
+						</h3>
+					</div>
+				</li>
+				<li class="fourth">
+					<div class="slider_txt">
+						<p>
+							“PEOPLE WANT TO KNOW WHO GREW THEIR FOOD.
+						</p>
+						<h3>
+							THAT’S US.”
+						</h3>
+					</div>
+				</li>
 			</ul>
 			<img class="prevBtn" src="images/btn_prev.png" alt="">
 			<img class="nextBtn" src="images/btn_next.png" alt="">
@@ -69,26 +105,55 @@
 		<div class="content">
 			<ul class="clearfix">
 				<!-- 1 -->
-				<li class="content1st">
+				<li class="content1st wow bounceInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon_01_01.png" alt="뉴스레터">
 					<p>보도 자료</p>
 				</li>
-				<li><img src="images/main_img_01_01.jpg" alt=""></li>
-				<li class="content3st">
-					<h3>뉴스</h3>
+				<li class="content2nd wow bounceInUp" data-wow-delay="0.4s">
+					<img src="images/main_img_01_01.jpg" alt="">
+					<img class="play_2nd" src="images/play.png" alt="">
 				</li>
-				<li><img src="images/main_img_01_02.jpg" alt=""></li>
+				<li class="content3rd wow bounceInUp" data-wow-delay="0.6s">
+					<h3>뉴스</h3>
+					<ul class="slider2">
+						<li class="clearfix">
+							<div class="left">
+								<p>A. 농심<br>
+								Welch’s Farmer’s Pick<br>
+								출시</p>
+							</div>
+							<div class="right">
+								<img src="images/main_img_01_02.jpg" alt="">
+							</div>
+						</li>
+						<li class="clearfix ">
+							<div class="left">
+								<p>B. 농심<br>
+								Welch’s Farmer’s Pick<br>
+								출시</p>
+							</div>
+							<div class="right">
+								<img src="images/main_img_01_02.jpg" alt="">
+							</div>
+						</li>
+					</ul>
+					<div class="btn">
+						<img class="prev" src="images/btn01_01.png" alt="이전">
+						<img class="next" src="images/btn01_02.png" alt="다음">
+					</div>
+				</li>
+				<!-- <li><img src="images/main_img_01_02.jpg" alt=""></li> -->
 
 				<!-- 2 -->
-				<li class="content5st">
+				<li class="content5st wow bounceInUp" data-wow-delay="0.8s">
 					<img src="images/main_icon_01_02.png" alt="회사소개">
 					<p>회사 소개</p>
 				</li>
-				<li class="content6st">
+				<li class="content6st wow bounceInUp" data-wow-delay="1s">
 					<img src="images/main_icon_01_03.png" alt="투자정보">
 					<p>투자 정보</p>
 				</li>
-				<li class="content7st">
+				<li class="content7st wow bounceInUp" data-wow-delay="1.2s">
 					<img src="images/main_img_01_03.jpg" alt="">
 					<div class="card">
 						<img src="images/main_acc_01.png" alt="">
@@ -100,7 +165,7 @@
 				</li>
 
 				<!-- 3 -->
-				<li class="content8st">
+				<li class="content8st wow bounceInUp" data-wow-delay="1.4s">
 					<img src="images/main_img_01_04.jpg" alt="">
 					<div class="card">
 						<h3>자연이 만든</h3>
@@ -108,7 +173,7 @@
 						<img class="acc_3" src="images/main_acc_03.png" alt="">
 					</div>
 				</li>
-				<li class="content9st">
+				<li class="content9st wow bounceInUp" data-wow-delay="1.6s">
 					<img src="images/main_img_01_05.jpg" alt="">
 					<div class="card">
 						<p>우리의 노하우와 열정 및<br>
@@ -118,17 +183,17 @@
 						<img src="images/main_acc_04.png" alt="">
 					</div>
 				</li>
-				<li  class="content10st">
+				<li  class="content10st wow bounceInUp" data-wow-delay="1.8s">
 					<img src="images/main_icon_01_04.png" alt="주요산업">
 					<p>주요 산업</p>
 				</li>
 				
 				<!-- 4 -->
-				<li class="content11st">
+				<li class="content11st wow bounceInUp" data-wow-delay="2s">
 					<img src="images/main_icon_01_04.png" alt="사회공헌활동">
 					<p>사회공헌 활동</p>
 				</li>
-				<li class="content12st">
+				<li class="content12st wow bounceInUp" data-wow-delay="2.2s">
 					<img src="images/main_img_01_06.jpg" alt="">
 					<div class="card">
 						<img src="images/main_acc_05.png" alt="">
@@ -144,26 +209,85 @@
 			<ul class="clearfix">
 				<li>
 					<img src="images/content_icon_01.png" alt="">
-					<h3>A. Lorem ipsum.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos laborum dignissimos cum doloribus ullam nisi aperiam expedita rerum, distinctio pariatur ea blanditiis, recusandae, sint itaque reprehenderit architecto illo dolores.</p>
+					<div class="box">
+						<h3>A. Lorem ipsum.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos laborum dignissimos cum doloribus ullam nisi aperiam expedita rerum, distinctio pariatur ea blanditiis, recusandae, sint itaque reprehenderit architecto illo dolores.</p>
+					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_02.png" alt="">
-					<h3>B. Lorem ipsum.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum amet corporis natus ratione eos, molestiae obcaecati ea dignissimos temporibus ut vero adipisci nihil quia voluptatem, neque, odio vitae impedit.</p>
+					<div class="box">
+						<h3>B. Lorem ipsum.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum amet corporis natus ratione eos, molestiae obcaecati ea dignissimos temporibus ut vero adipisci nihil quia voluptatem, neque, odio vitae impedit.</p>
+					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_03.png" alt="">
-					<h3>C. Lorem ipsum.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam in exercitationem sapiente sunt illo veniam vel. Consequatur eligendi, molestiae, quia cupiditate nisi aspernatur provident maiores doloremque tempora beatae dolor quisquam.</p>
+					<div class="box">
+						<h3>C. Lorem ipsum.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam in exercitationem sapiente sunt illo veniam vel. Consequatur eligendi, molestiae, quia cupiditate nisi aspernatur provident maiores doloremque tempora beatae dolor quisquam.</p>
+					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_04.png" alt="">
-					<h3>D. Lorem ipsum.</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maiores animi eaque impedit? Pariatur quidem deserunt voluptates voluptatum reiciendis sed saepe debitis et molestias expedita, totam iure, ratione eveniet eligendi.</p>
+					<div class="box">
+						<h3>D. Lorem ipsum.</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maiores animi eaque impedit? Pariatur quidem deserunt voluptates voluptatum reiciendis sed saepe debitis et molestias expedita, totam iure, ratione eveniet eligendi.</p>
+					</div>
 				</li>
 			</ul>
 		</div>
+	</div>
+	<div id="content_2">
+		<ul class="clearfix">
+			<li class="box_c1">
+				<img src="images/content_icon_05.png" alt="">
+				<p class="p_c1">SNS</p>
+				<p class="p_c2">언제나 고객을 위해<br>
+				가장 빠르고 신속한 최신의 솔루션을<br>
+				제시해드립니다.<br>
+				고객감동을 위해 최선을 다하겠습니다.</p>
+				<p class="p_c3">2020.03.24</p>
+			</li>
+			
+			<li class="box_c2">
+				<img src="images/content_img_02.jpg" alt="">
+			</li>
+			<li class="box_c3">
+				<img class="name" src="images/content_name_02.png" alt="">
+				<img class="comment" src="images/content_comment_02.png" alt="">
+			</li>
+			<li class="box_c4">
+				<img src="images/content_img_04.jpg" alt="">
+			</li>
+			
+			<li class="box_c5">
+				<img class="name" src="images/content_name_01.png" alt="">
+				<img class="comment" src="images/content_comment_01.png" alt="">
+			</li>
+			<li class="box_c6">
+				<img src="images/content_img_03.jpg" alt="">
+			</li>
+			<li class="box_c7">
+				<img class="name" src="images/content_name_03.png" alt="">
+				<img class="comment" src="images/content_comment_03.png" alt="">
+			</li>
+		</ul>
+	</div>
+	<div class="content_3">
+		<ul>
+			<li>
+				<h2>지속가능 경영</h2>
+				<p>사람과 생활에 행복을 주는 기업으로<br>
+				함께 하겠습니다.</p>
+				<div class="box"></div>
+			</li>
+			<li>
+				<h2>인재 채용</h2>
+				<p>창의력을 발휘하여 발전하는<br> 인재를 기다립니다.</p>
+				<div class="box"></div>
+			</li>
+		</ul>
 	</div>
 	<footer></footer>
 </body>
