@@ -7,9 +7,11 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/colorbox.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
+	<script src="js/jquery.colorbox-min.js"></script>
 	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
@@ -39,6 +41,8 @@
 				yeji2.goToNextSlide();
 				return false
 			});
+			$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315});
+			play_2nd
 		});
 		new WOW().init(); 
 	</script>
@@ -111,7 +115,9 @@
 				</li>
 				<li class="content2nd wow bounceInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_01.jpg" alt="">
-					<img class="play_2nd" src="images/play.png" alt="">
+					<a href="https://www.youtube.com/embed/teNM9w6WFcA" class="youtube">
+						<img class="play_2nd" src="images/play.png" alt="">
+					</a>
 				</li>
 				<li class="content3rd wow bounceInUp" data-wow-delay="0.6s">
 					<h3>뉴스</h3>
