@@ -8,11 +8,11 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
-	<link rel="stylesheet" href="css/style.css">
 	<script>
 		$(document).ready(function(){
 			var yeji = $(".slider").bxSlider({
@@ -42,7 +42,6 @@
 				return false
 			});
 			$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315});
-			play_2nd
 		});
 		new WOW().init(); 
 	</script>
@@ -57,6 +56,8 @@
 					<li><a href="#">Products</a></li>
 					<li><a href="#">Recipes</a></li>
 					<li><a href="#">About Welch’s</a></li>
+					<li class="kro"><a href="#">KRO</a></li>
+					<li class="eng"><a href="#">ENG</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -109,17 +110,17 @@
 		<div class="content">
 			<ul class="clearfix">
 				<!-- 1 -->
-				<li class="content1st wow bounceInUp" data-wow-delay="0.2s">
+				<li class="content1st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon_01_01.png" alt="뉴스레터">
 					<p>보도 자료</p>
 				</li>
-				<li class="content2nd wow bounceInUp" data-wow-delay="0.4s">
+				<li class="content2nd wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_01.jpg" alt="">
 					<a href="https://www.youtube.com/embed/teNM9w6WFcA" class="youtube">
 						<img class="play_2nd" src="images/play.png" alt="">
 					</a>
 				</li>
-				<li class="content3rd wow bounceInUp" data-wow-delay="0.6s">
+				<li class="content3rd wow fadeInUp" data-wow-delay="0.6s">
 					<h3>뉴스</h3>
 					<ul class="slider2">
 						<li class="clearfix">
@@ -151,15 +152,15 @@
 				<!-- <li><img src="images/main_img_01_02.jpg" alt=""></li> -->
 
 				<!-- 2 -->
-				<li class="content5st wow bounceInUp" data-wow-delay="0.8s">
+				<li class="content5st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon_01_02.png" alt="회사소개">
 					<p>회사 소개</p>
 				</li>
-				<li class="content6st wow bounceInUp" data-wow-delay="1s">
+				<li class="content6st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_icon_01_03.png" alt="투자정보">
 					<p>투자 정보</p>
 				</li>
-				<li class="content7st wow bounceInUp" data-wow-delay="1.2s">
+				<li class="content7st wow fadeInUp" data-wow-delay="0.6s">
 					<img src="images/main_img_01_03.jpg" alt="">
 					<div class="card">
 						<img src="images/main_acc_01.png" alt="">
@@ -171,7 +172,7 @@
 				</li>
 
 				<!-- 3 -->
-				<li class="content8st wow bounceInUp" data-wow-delay="1.4s">
+				<li class="content8st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_img_01_04.jpg" alt="">
 					<div class="card">
 						<h3>자연이 만든</h3>
@@ -179,7 +180,7 @@
 						<img class="acc_3" src="images/main_acc_03.png" alt="">
 					</div>
 				</li>
-				<li class="content9st wow bounceInUp" data-wow-delay="1.6s">
+				<li class="content9st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_05.jpg" alt="">
 					<div class="card">
 						<p>우리의 노하우와 열정 및<br>
@@ -189,17 +190,17 @@
 						<img src="images/main_acc_04.png" alt="">
 					</div>
 				</li>
-				<li  class="content10st wow bounceInUp" data-wow-delay="1.8s">
+				<li  class="content10st wow fadeInUp" data-wow-delay="0.6s">
 					<img src="images/main_icon_01_04.png" alt="주요산업">
 					<p>주요 산업</p>
 				</li>
 				
 				<!-- 4 -->
-				<li class="content11st wow bounceInUp" data-wow-delay="2s">
+				<li class="content11st wow fadeInUp" data-wow-delay="0.2s">
 					<img src="images/main_icon_01_04.png" alt="사회공헌활동">
 					<p>사회공헌 활동</p>
 				</li>
-				<li class="content12st wow bounceInUp" data-wow-delay="2.2s">
+				<li class="content12st wow fadeInUp" data-wow-delay="0.4s">
 					<img src="images/main_img_01_06.jpg" alt="">
 					<div class="card">
 						<img src="images/main_acc_05.png" alt="">
@@ -216,29 +217,36 @@
 				<li>
 					<img src="images/content_icon_01.png" alt="">
 					<div class="box">
-						<h3>A. Lorem ipsum.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum eos laborum dignissimos cum doloribus ullam nisi aperiam expedita rerum, distinctio pariatur ea blanditiis, recusandae, sint itaque reprehenderit architecto illo dolores.</p>
+						<h3>ENGINEERING</h3>
+						<p>사업계획부터 유지/관리<br>
+						단계까지 사업의 전과정에 대한<br>
+						서비스를 제공</p>
 					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_02.png" alt="">
 					<div class="box">
-						<h3>B. Lorem ipsum.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur eum amet corporis natus ratione eos, molestiae obcaecati ea dignissimos temporibus ut vero adipisci nihil quia voluptatem, neque, odio vitae impedit.</p>
+						<h3>PREMIER</h3>
+						<p>최고의 기술과 품질을 제공<br>
+						미래가치를 창조, 공유하며,<br>
+						생성하는 기업</p>
 					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_03.png" alt="">
 					<div class="box">
-						<h3>C. Lorem ipsum.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam in exercitationem sapiente sunt illo veniam vel. Consequatur eligendi, molestiae, quia cupiditate nisi aspernatur provident maiores doloremque tempora beatae dolor quisquam.</p>
+						<h3>GLOBAL</h3>
+						<p>기술경쟁 우위를 바탕으로<br>
+						세계시장을 선도</p>
 					</div>
 				</li>
 				<li>
 					<img src="images/content_icon_04.png" alt="">
 					<div class="box">
-						<h3>D. Lorem ipsum.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis maiores animi eaque impedit? Pariatur quidem deserunt voluptates voluptatum reiciendis sed saepe debitis et molestias expedita, totam iure, ratione eveniet eligendi.</p>
+						<h3>PARTNER</h3>
+						<p>이해 관계자와 함께 지속가능한<br>
+						미래가치를 창조, 공뮤하며,<br>
+						생성하는 기업</p>
 					</div>
 				</li>
 			</ul>
@@ -254,6 +262,10 @@
 				제시해드립니다.<br>
 				고객감동을 위해 최선을 다하겠습니다.</p>
 				<p class="p_c3">2020.03.24</p>
+				<div class="btn">
+					<img class="prev" src="images/btn01_01.png" alt="이전">
+					<img class="next" src="images/btn01_02.png" alt="다음">
+				</div>
 			</li>
 			
 			<li class="box_c2">
@@ -282,19 +294,35 @@
 	</div>
 	<div id="content_3">
 		<ul class="clearfix">
-			<li>
+			<li class="li_c3_1">
 				<h2>지속가능 경영</h2>
 				<p>사람과 생활에 행복을 주는 기업으로<br>
 				함께 하겠습니다.</p>
-				<div class="box"></div>
+				<img src="images/content_icon_06.png" alt="">
+				<a href="#">자세히 보기</a>
 			</li>
-			<li>
+			<li class="li_c3_2">
 				<h2>인재 채용</h2>
 				<p>창의력을 발휘하여 발전하는<br> 인재를 기다립니다.</p>
-				<div class="box"></div>
+				<img src="images/content_icon_07.png" alt="">
+				<a href="#">자세히 보기</a>
 			</li>
 		</ul>
 	</div>
-	<footer></footer>
+	<footer>
+		<div id="main_footer">
+			<p class="p_1">이메일주소무단수집거부<span>|</span>
+				고객상담<span>|</span>FAQ<span>|</span>
+				오시는길<span>|</span>개인정보처리방침</p>
+			<p class="p_2">(주)농심<span>|</span>
+				사업자등록번호 : 118-81-03914<span>|</span>
+				대표이사 : 박준<span>|</span>
+				대표전화 : 02-820-7114 / 고객센터 : 080-023-5181<br>
+				주소 : 서울특별시 동작구 여의대방로 112 (신대방동)
+			</p>
+			<p class="p_2">COPYRIGHT&copy; 2013 BY NONGSHIM.CO.,LTD.ALL RIGHTS RESERVED.</p>
+			<img src="images/footer_logo.png" alt="">
+		</div>
+	</footer>
 </body>
 </html>
