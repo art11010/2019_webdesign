@@ -41,6 +41,19 @@
 				yeji2.goToNextSlide();
 				return false
 			});
+			// var yeji3 = $(".slider3").bxSlider({
+			// 	// auto:true,
+			// 	pager:false,
+			// 	controls:false
+			// });
+			// $(".prev2").click(function(){
+			// 	yeji3.goToPrevSlide();
+			// 	return false
+			// });
+			// $(".next2").click(function(){
+			// 	yeji3.goToNextSlide();
+			// 	return false
+			// });
 			$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315});
 		});
 		new WOW().init(); 
@@ -255,17 +268,24 @@
 	<div id="content_2">
 		<ul class="clearfix">
 			<li class="box_c1">
-				<img src="images/content_icon_05.png" alt="">
-				<p class="p_c1">SNS</p>
-				<p class="p_c2">언제나 고객을 위해<br>
-				가장 빠르고 신속한 최신의 솔루션을<br>
-				제시해드립니다.<br>
-				고객감동을 위해 최선을 다하겠습니다.</p>
-				<p class="p_c3">2020.03.24</p>
-				<div class="btn">
-					<img class="prev" src="images/btn01_01.png" alt="이전">
-					<img class="next" src="images/btn01_02.png" alt="다음">
-				</div>
+				<ul class="slider3">
+					<li>
+						<img src="images/content_icon_05.png" alt="">
+						<div class="text_c3">
+							<p class="p_c1">SNS</p>
+							<p class="p_c2">언제나 고객을 위해<br>
+							가장 빠르고 신속한 최신의 솔루션을<br>
+							제시해드립니다.<br>
+							고객감동을 위해 최선을 다하겠습니다.</p>
+							<p class="p_c3">2020.03.24</p>
+						</div>
+					</li>
+					<div class="btn">
+						<img class="prev2" src="images/btn01_01.png" alt="이전">
+						<img class="next2" src="images/btn01_02.png" alt="다음">
+					</div>
+				</ul>
+				
 			</li>
 			
 			<li class="box_c2">
