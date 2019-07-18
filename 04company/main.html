@@ -41,19 +41,19 @@
 				yeji2.goToNextSlide();
 				return false
 			});
-			// var yeji3 = $(".slider3").bxSlider({
-			// 	// auto:true,
-			// 	pager:false,
-			// 	controls:false
-			// });
-			// $(".prev2").click(function(){
-			// 	yeji3.goToPrevSlide();
-			// 	return false
-			// });
-			// $(".next2").click(function(){
-			// 	yeji3.goToNextSlide();
-			// 	return false
-			// });
+			var yeji3 = $(".slider3").bxSlider({
+				// auto:true,
+				pager:false,
+				controls:false
+			});
+			$(".prev2").click(function(){
+				yeji3.goToPrevSlide();
+				return false
+			});
+			$(".next2").click(function(){
+				yeji3.goToNextSlide();
+				return false
+			});
 			$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315});
 		});
 		new WOW().init(); 
