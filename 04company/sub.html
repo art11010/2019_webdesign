@@ -8,17 +8,41 @@
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/colorbox.css">
-	<link rel="stylesheet" href="css/substyle.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
+	<script>
+		// var viewImg = ["images/sub_content_img_01.jpg",
+		// "images/sub_content_img_02.jpg",
+		// "images/sub_content_img_03.jpg",
+		// "images/sub_content_img_04.jpg",]
+		// $(document).ready(function(){
+		// 	$("#sub_content ul > li").click(function(){
+		// 		var sub_num = $(this).index();
+		// 		$(".sub_img > img").attr("src",viewImg[sub_num]);
+		// 		return false;
+		// 	});
+		// });
+		$(document).ready(function(){
+			$(".sub_menu2 > ul > li").click(function(){
+				var sub_num = $(this).index();
+				console.log(sub_num);
+			$(".sub_menu2 > ul > li").removeClass();
+			$(this).addClass("active");
+
+			$(".sub_img > div").hide();
+			$(".sub_img > div").eq(sub_num).fadeIn();
+			});
+		});
+	</script>
 </head>
 <body>
-	<header id="main_header">
-		<div id="header_top" class="clearfix">
+	<header id="sub_header">
+		<div id="sub_header_top" class="clearfix">
 			<img src="images/logo.png" alt="">
-			<nav id="main_menu">
+			<nav id="sub_menu">
 				<ul class="clearfix">
 					<li><a href="#">Our Story</a></li>
 					<li><a href="#">Products</a></li>
@@ -29,22 +53,33 @@
 				</ul>
 			</nav>
 		</div>
-		<div id="content">
-			<div class="sub_menu">
+		<div id="sub_content">
+			<div class="sub_menu2">
 				<ul class="clearfix">
-					<li><a href="#">CEO 인사말</a></li>
+					<li class="active"><a href="#">CEO 인사말</a></li>
 					<li><a href="#">경영이념</a></li>
 					<li><a href="#">핵심가치</a></li>
 					<li><a href="#">CI</a></li>
 				</ul>
-			</div>
-			<div class="sub_content">
-				
+				<div class="sub_img">
+					<div>
+						<img src="images/sub_content_img_01.jpg" alt="1">
+					</div>
+					<div>
+						<img src="images/sub_content_img_02.jpg" alt="2">
+					</div>
+					<div>
+						<img src="images/sub_content_img_03.jpg" alt="3">
+					</div>
+					<div>
+						<img src="images/sub_content_img_04.jpg" alt="4">
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 	<footer>
-		<div id="main_footer">
+		<div id="sub_footer">
 			<p class="p_1">이메일주소무단수집거부<span>|</span>
 				고객상담<span>|</span>FAQ<span>|</span>
 				오시는길<span>|</span>개인정보처리방침</p>
