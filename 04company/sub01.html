@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>Welch's SUB</title>
+	<title>Our Story</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
 	<link rel="stylesheet" href="css/animate.css">
@@ -26,19 +26,19 @@
 		// 	});
 		// });
 		$(document).ready(function(){
-			$(".sub_menu2 > ul > li").click(function(){
+			$("#sub_menu2 > ul > li").click(function(){
 				var sub_num = $(this).index();
 				console.log(sub_num);
-			$(".sub_menu2 > ul > li").removeClass();
+			$("#sub_menu2 > ul > li").removeClass();
 			$(this).addClass("active");
 
 			$(".sub_img > div").hide();
 			$(".sub_img > div").eq(sub_num).fadeIn();
 
 			if(sub_num == 1 || sub_num == 3){
-				$("#bigger").hide();
+				$("#big_content").hide();
 			}else{
-				$("#bigger").show();
+				$("#big_content").show();
 			}
 
 			return false;
@@ -52,15 +52,15 @@
 			<a href="main.html"><img src="images/logo.png" alt=""></a>
 			<nav id="sub_menu">
 				<ul class="clearfix">
-					<li><a href="#">Our Story</a></li>
-					<li><a href="#">Products</a></li>
-					<li><a href="#">Recipes</a></li>
-					<li><a href="#">About Welch’s</a></li>
+					<li><a class="on" href="sub01.html">Our Story</a></li>
+					<li><a href="sub02.html">Products</a></li>
+					<li><a href="sub03.html">Recipes</a></li>
+					<li><a href="sub04.html">About Welch’s</a></li>
 					<li class="kro"><a href="#">KRO</a></li>
 					<li class="eng"><a href="#">ENG</a></li>
 				</ul>
 			</nav>
-			<div class="sub_menu2">
+			<div id="sub_menu2">
 				<ul class="clearfix">
 					<li class="active"><a href="#">CEO 인사말</a></li>
 					<li><a href="#">경영이념</a></li>
@@ -68,7 +68,7 @@
 					<li><a href="#">CI</a></li>
 				</ul>
 			</div>
-			<div class="sub_txt">
+			<div id="sub_txt">
 				<p>
 					“PEOPLE WANT TO KNOW WHO GREW THEIR FOOD.
 				</p>
@@ -92,220 +92,59 @@
 				<img src="images/sub_content_image_01.jpg" alt="4">
 			</div>
 		</div>
-		<div id="bigger">
-			<div class="big_content">
-				<div class="sub_content2" class="clearfix">
-					<h3>PRODUCTS</h3>
-					<div class="sub2_wrapper">
-						<div class="sub2_wrap">	
-							<a href="javascript:void(0)">
-								<p>100% JUICE</p>
-								<img src="images/sub_content_icon_10.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SPARKING</p>
-								<img src="images/sub_content_icon_11.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SNACKS</p>
-								<img src="images/sub_content_icon_12.png" alt="">
-							</a>
-						</div>
+		<div id="big_content">
+			<div class="sub_content2" class="clearfix">
+				<h3>PRODUCTS</h3>
+				<div class="sub2_wrapper">
+					<div class="sub2_wrap">	
+						<a href="sub02.html">
+							<p>100% JUICE</p>
+							<img src="images/sub_content_icon_10.png" alt="">
+						</a>
 					</div>
-				</div>
-				<div class="sub_content3">
-					<p>
-						The grapes used to make our 100% juice,<br>
-						jelly and other Welch’s products are grown<br>
-						on family farms in the United States. Concord<br>
-						and Niagara grapes are picky about climate,<br>
-						requiring just the right mix of sunshine,<br>
-						rainfall and cool nights.<br>
-						So Welch’s grows in four regions<br>
-						that have the perfect climate<br>
-						for the grapes to thrive.
-					</p>
-					<h3>
-						Where We Grow Grapes
-					</h3>
-				</div>
-				<div class="sub_content4">
-					<div class="sub_wrap">
-						<p>
-							“The grapes in our juice are proudly grown<br>
-							by the farmer families who own Welch’s.<br>
-							It makes a difference you can taste.<br>
-							Because it’s got to be good enough<br>
-							for our families to be good enough for yours.”<br>
-						</p>
-						<img src="images/sub_content_icon_13.png" alt="">
+					<div class="sub2_wrap">
+						<a href="sub02.html">
+							<p>SPARKING</p>
+							<img src="images/sub_content_icon_11.png" alt="">
+						</a>
+					</div>
+					<div class="sub2_wrap">
+						<a href="sub02.html">
+							<p>SNACKS</p>
+							<img src="images/sub_content_icon_12.png" alt="">
+						</a>
 					</div>
 				</div>
 			</div>
-			<div class="big_content">
-				<div class="sub_content2" class="clearfix">
-					<h3>PRODUCTS</h3>
-					<div class="sub2_wrapper">
-						<div class="sub2_wrap">	
-							<a href="javascript:void(0)">
-								<p>100% JUICE</p>
-								<img src="images/sub_content_icon_10.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SPARKING</p>
-								<img src="images/sub_content_icon_11.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SNACKS</p>
-								<img src="images/sub_content_icon_12.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="sub_content3">
+			<div class="sub_content3">
+				<p>
+					The grapes used to make our 100% juice,<br>
+					jelly and other Welch’s products are grown<br>
+					on family farms in the United States. Concord<br>
+					and Niagara grapes are picky about climate,<br>
+					requiring just the right mix of sunshine,<br>
+					rainfall and cool nights.<br>
+					So Welch’s grows in four regions<br>
+					that have the perfect climate<br>
+					for the grapes to thrive.
+				</p>
+				<h3>
+					Where We Grow Grapes
+				</h3>
+			</div>
+			<div class="sub_content4">
+				<div class="sub_wrap">
 					<p>
-						The grapes used to make our 100% juice,<br>
-						jelly and other Welch’s products are grown<br>
-						on family farms in the United States. Concord<br>
-						and Niagara grapes are picky about climate,<br>
-						requiring just the right mix of sunshine,<br>
-						rainfall and cool nights.<br>
-						So Welch’s grows in four regions<br>
-						that have the perfect climate<br>
-						for the grapes to thrive.
+						“The grapes in our juice are proudly grown<br>
+						by the farmer families who own Welch’s.<br>
+						It makes a difference you can taste.<br>
+						Because it’s got to be good enough<br>
+						for our families to be good enough for yours.”<br>
 					</p>
-					<h3>
-						Where We Grow Grapes
-					</h3>
-				</div>
-				<div class="sub_content4">
-					<div class="sub_wrap">
-						<p>
-							“The grapes in our juice are proudly grown<br>
-							by the farmer families who own Welch’s.<br>
-							It makes a difference you can taste.<br>
-							Because it’s got to be good enough<br>
-							for our families to be good enough for yours.”<br>
-						</p>
-						<img src="images/sub_content_icon_13.png" alt="">
-					</div>
+					<img src="images/sub_content_icon_13.png" alt="">
 				</div>
 			</div>
-			<div class="big_content">
-				<div class="sub_content2" class="clearfix">
-					<h3>PRODUCTS</h3>
-					<div class="sub2_wrapper">
-						<div class="sub2_wrap">	
-							<a href="javascript:void(0)">
-								<p>100% JUICE</p>
-								<img src="images/sub_content_icon_10.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SPARKING</p>
-								<img src="images/sub_content_icon_11.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SNACKS</p>
-								<img src="images/sub_content_icon_12.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="sub_content3">
-					<p>
-						The grapes used to make our 100% juice,<br>
-						jelly and other Welch’s products are grown<br>
-						on family farms in the United States. Concord<br>
-						and Niagara grapes are picky about climate,<br>
-						requiring just the right mix of sunshine,<br>
-						rainfall and cool nights.<br>
-						So Welch’s grows in four regions<br>
-						that have the perfect climate<br>
-						for the grapes to thrive.
-					</p>
-					<h3>
-						Where We Grow Grapes
-					</h3>
-				</div>
-				<div class="sub_content4">
-					<div class="sub_wrap">
-						<p>
-							“The grapes in our juice are proudly grown<br>
-							by the farmer families who own Welch’s.<br>
-							It makes a difference you can taste.<br>
-							Because it’s got to be good enough<br>
-							for our families to be good enough for yours.”<br>
-						</p>
-						<img src="images/sub_content_icon_13.png" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="big_content">
-				<div class="sub_content2" class="clearfix">
-					<h3>PRODUCTS</h3>
-					<div class="sub2_wrapper">
-						<div class="sub2_wrap">	
-							<a href="javascript:void(0)">
-								<p>100% JUICE</p>
-								<img src="images/sub_content_icon_10.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SPARKING</p>
-								<img src="images/sub_content_icon_11.png" alt="">
-							</a>
-						</div>
-						<div class="sub2_wrap">
-							<a href="javascript:void(0)">
-								<p>SNACKS</p>
-								<img src="images/sub_content_icon_12.png" alt="">
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="sub_content3">
-					<p>
-						The grapes used to make our 100% juice,<br>
-						jelly and other Welch’s products are grown<br>
-						on family farms in the United States. Concord<br>
-						and Niagara grapes are picky about climate,<br>
-						requiring just the right mix of sunshine,<br>
-						rainfall and cool nights.<br>
-						So Welch’s grows in four regions<br>
-						that have the perfect climate<br>
-						for the grapes to thrive.
-					</p>
-					<h3>
-						Where We Grow Grapes
-					</h3>
-				</div>
-				<div class="sub_content4">
-					<div class="sub_wrap">
-						<p>
-							“The grapes in our juice are proudly grown<br>
-							by the farmer families who own Welch’s.<br>
-							It makes a difference you can taste.<br>
-							Because it’s got to be good enough<br>
-							for our families to be good enough for yours.”<br>
-						</p>
-						<img src="images/sub_content_icon_13.png" alt="">
-					</div>
-				</div>
-			</div>
-		</div>	
+		</div>
 	</div>
 	<footer>
 		<div id="sub_footer">
