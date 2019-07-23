@@ -13,6 +13,21 @@
 	<script src="js/jquery.bxslider.js"></script>
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#sub02_menu2 > ul > li").click(function(){
+				var sub02_num = $(this).index();
+				console.log(sub02_num);
+			$("#sub02_menu2 > ul > li").removeClass();
+			$(this).addClass("active");
+
+			$(".sub02_img > div").hide();
+			$(".sub02_img > div").eq(sub02_num).fadeIn();
+
+			return false;
+			});
+		});
+	</script>
 </head>
 <body>
 	<header id="sub02_header">
@@ -30,10 +45,8 @@
 			</nav>
 			<div id="sub02_menu2">
 				<ul class="clearfix">
-					<li class="active"><a href="#">CEO 인사말</a></li>
-					<li><a href="#">경영이념</a></li>
-					<li><a href="#">핵심가치</a></li>
-					<li><a href="#">CI</a></li>
+					<li class="active"><a href="#">Welch's</a></li>
+					<li><a href="#">How to made</a></li>
 				</ul>
 			</div>
 			<div id="sub02_txt">
@@ -45,6 +58,28 @@
 			</div>
 		</div>
 	</header>
+	<div id="sub02_content">
+		<div class="sub02_img">
+			<div>
+				<img src="images/sub02_content_img_01.jpg" alt="1">
+			</div>
+			<div>
+				<img src="images/sub02_content_img_02.jpg" alt="2">
+			</div>
+		</div>
+	</div>
+	<div class="sub_content4">
+		<div class="sub_wrap">
+			<p>
+				“The grapes in our juice are proudly grown<br>
+				by the farmer families who own Welch’s.<br>
+				It makes a difference you can taste.<br>
+				Because it’s got to be good enough<br>
+				for our families to be good enough for yours.”<br>
+			</p>
+			<img src="images/sub_content_icon_13.png" alt="">
+		</div>
+	</div>
 	<footer>
 		<div id="sub02_footer">
 			<p class="p_1"><a href="javascript:void(0)">이메일주소무단수집거부</a><span>|</span>
