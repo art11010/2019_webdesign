@@ -1,6 +1,16 @@
 @charset "utf-8";
 #sub_header > #sub_header_top > #sub_menu > ul> li > a.on{color: #632475;
 text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+#sub02_header > #sub02_header_top > #sub02_menu > ul> li > a.on{color: #632475;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+#sub03_header > #sub03_header_top > #sub03_menu > ul> li > a.on{color: #632475;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+#sub04_header > #sub04_header_top > #sub04_menu > ul> li > a.on{color: #632475;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+#sub05_header > #sub05_header_top > #sub05_menu > ul> li > a.on{color: #632475;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+
+
 #main_header{height:1950px; position: relative;}
 	#header_top{width:1260px;height:50px;
 		position:absolute;left:50%;margin-left:-630px;
