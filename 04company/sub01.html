@@ -35,10 +35,10 @@
 			$(".sub_img > div").hide();
 			$(".sub_img > div").eq(sub_num).fadeIn();
 
-			if(sub_num == 1 || sub_num == 3){
-				$("#big_content").hide();
-			}else{
+			if(sub_num == 1){
 				$("#big_content").show();
+			}else{
+				$("#big_content").hide();
 			}
 
 			return false;
@@ -52,20 +52,19 @@
 			<a href="main.html"><img src="images/logo.png" alt=""></a>
 			<nav id="sub_menu">
 				<ul class="clearfix">
-					<li><a class="on" href="sub01.html">Our Story</a></li>
-					<li><a href="sub02.html">Products</a></li>
-					<li><a href="sub03.html">Recipes</a></li>
-					<li><a href="sub04.html">About Welch’s</a></li>
+					<li><a href="sub01.html" class="on">Management</a></li>
+					<li><a href="sub02.html">Our Story</a></li>
+					<li><a href="sub03.html">Products</a></li>
+					<li><a href="sub04.html">Recipes</a></li>
+					<li><a href="sub05.html">About Welch’s</a></li>
 					<li class="kro"><a href="#">KRO</a></li>
 					<li class="eng"><a href="#">ENG</a></li>
 				</ul>
 			</nav>
 			<div id="sub_menu2">
 				<ul class="clearfix">
-					<li class="active"><a href="#">CEO 인사말</a></li>
-					<li><a href="#">경영이념</a></li>
-					<li><a href="#">핵심가치</a></li>
-					<li><a href="#">CI</a></li>
+					<li class="active"><a href="#">Management</a></li>
+					<li><a href="#">Concept</a></li>
 				</ul>
 			</div>
 			<div id="sub_txt">
@@ -81,16 +80,10 @@
 	<div id="sub_content">
 		<div class="sub_img">
 			<div>
+				<img src="images/sub_content_img_01_2.jpg" alt="2">
+			</div>
+			<div>
 				<img src="images/sub_content_img_01_1.jpg" alt="1">
-			</div>
-			<div>
-				<img src="images/sub_content_image_01.jpg" alt="2">
-			</div>
-			<div>
-				<img src="images/sub_content_img_03_3.jpg" alt="3">
-			</div>
-			<div>
-				<img src="images/sub_content_image_01.jpg" alt="4">
 			</div>
 		</div>
 		<div id="big_content">
