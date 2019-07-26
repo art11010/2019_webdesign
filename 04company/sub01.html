@@ -32,8 +32,11 @@
 			$("#sub_menu2 > ul > li").removeClass();
 			$(this).addClass("active");
 
-			$(".sub_img > div").hide();
-			$(".sub_img > div").eq(sub_num).fadeIn();
+			// $(".sub_img > div").hide();
+			// $(".sub_img > div").eq(sub_num).fadeIn();
+
+			$(".sub_img > div").hide().css({opacity:0});
+			$(".sub_img > div").eq(sub_num).css({display:"block"}).animate({opacity:1});
 
 			if(sub_num == 1){
 				$("#big_content").show();
