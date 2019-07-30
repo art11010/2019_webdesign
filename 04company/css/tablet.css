@@ -1,6 +1,6 @@
 @charset "utf-8";
 @media all and (max-width: 960px){
-#main_header{height:1250px; position: relative;}
+#main_header{height:1130px; position: relative;}
 	#header_top{width:100%;height:50px;
 		position:absolute;
 		top:40px;z-index: 1;}
@@ -95,11 +95,9 @@
 }
 
 /*header content*/
-#main_header .content{width: 100%;height: 1260px;
-	position: absolute;bottom: 0;
-	_background-color: #fff;}
-#main_header  .content li{float: left;width: 25%;height: 315px;
-		_border: 1px solid #000;}
+#main_header .content{width: 100%;_background-color: #fff;
+	position: absolute;bottom:0;}
+#main_header  .content li{float: left;width: 25%;height:315px;}
 
 .content1st,
 .content2nd,
@@ -113,18 +111,46 @@
 .content11st,
 .content12st{display: none;}
 .content li{position: relative;}
-.content li.content7st{display: block;width: 100% !important;height: 315px;
-	position: relative;overflow: hidden;}
-		li.content7st .card{position: absolute;width: 375px;height: 180px;
-			bottom: 30px;left: 30px;
-			background-color: rgba(255,255,255,0.5);color: #41347a;
-			_box-shadow:7px 10px 5px rgba(0,0,0,0.5);
-			padding:50px 20px 50px 20px;}
-		li.content7st .card h3{position: absolute;top: 70px;
-		font-size:1.5em;}
-		li.content7st .card p{position: absolute;bottom: 10px;
-		font-size:1em;font-weight: bold;}
-		li.content7st .card img{position: absolute;top:10px;}
+	/*3*/
+	.content li.content3rd{display: block;width: 100% !important;position: relative;}
+	.content li.content3rd h3{width: 200px;padding-top: 30px;padding-left: 30px;
+		z-index: 1;position: absolute;}
+	.content li.content3rd .slider2{position: absolute;top: 0;left: 0;width: 100%;}
+	.content li.content3rd .slider2 li{width: 100%;}
+	.content li.content3rd .slider2 div{float: left; width: 50%;}
+	.content li.content3rd .slider2 div.left{padding-top:70px;
+		text-align: center;}
+	.content li.content3rd .slider2 div.left p{padding-top:30px;}
+	.content li.content3rd .slider2 div.right{width: 50%;height: 315px;
+	float: left;position: relative;}
+	.content li.content3rd .slider2 div.right img{width: 100%;
+		position: absolute;left: 0;
+		top: 50%;transform: translateY(-50%);}
+	.content li.content3rd .slider2 div.right:after{content:"";
+		border-width: 20px;border-style:solid;
+		border-color: transparent transparent transparent #fff;
+		position: absolute;z-index: 1;top: 50%;transform: translateY(-50%);}
+
+		li.content3rd .btn{position: absolute;left: 30%;bottom: 30px;cursor:pointer;}
+		li.content3rd .btn img{float: left;width: 40px;height: 40px;}
+	/*.content li.content3rd .slider2 li.left{}*/
+	/*.content li.content3rd .slider2 li.right{}*/
+
+	
+	/*7*/
+	.content li.content7st{display: block;width: 100% !important;
+		position: relative;overflow: hidden;}
+	.content li.content7st > img{width: 100%;position: absolute;top: 50%;transform: translateY(-50%)}
+	li.content7st .card{position: absolute;width: 375px;height: 180px;
+		bottom: 30px;left: 30px;
+		background-color: rgba(255,255,255,0.5);color: #41347a;
+		_box-shadow:7px 10px 5px rgba(0,0,0,0.5);
+		padding:50px 20px 50px 20px;}
+	li.content7st .card h3{position: absolute;top: 70px;
+	font-size:1.5em;}
+	li.content7st .card p{position: absolute;bottom: 10px;
+	font-size:1em;font-weight: bold;}
+	li.content7st .card img{position: absolute;top:10px;}
 
 
 /*content*/
@@ -241,7 +267,7 @@ footer{width : 100%; background-color: #fff;
 	#main_footer p{padding-bottom: 10px;}
 	#main_footer a{color: #808080;}
 	#main_footer span{padding: 0 25px;}
-	#main_footer .p_1{}
-	#main_footer .p_2{font-size: 0.9em;}
+	#main_footer .p_1{font-size: 0.8em;}
+	#main_footer .p_2{font-size: 0.7em;}
 	#main_footer img{width: 108px;height: 57.6px;margin-bottom: 10px;}
 }
