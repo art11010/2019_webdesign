@@ -54,7 +54,21 @@
 				yeji3.goToNextSlide();
 				return false
 			});
-			$(".youtube").colorbox({iframe:true,innerWidth:560,innerHeight:315});
+			$(".youtube").colorbox({
+				iframe:true,
+				innerWidth:560,
+				innerHeight:315
+			});
+			$(".toggleMenu").click(function(){
+				var ye = $(this).attr("class");
+				console.log(ye);
+				if(ye == "toggleMenu"){
+					$(this).addClass("change");
+				}else{
+					$(this).removeClass("change");
+				}
+
+			});
 		});
 		new WOW().init(); 
 	</script>
@@ -63,6 +77,11 @@
 	<header id="main_header">
 		<div id="header_top" class="clearfix">
 			<a href="main.html"><img src="images/logo.png" alt=""></a>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 			<nav id="main_menu">
 				<ul class="clearfix">
 					<li><a href="sub01.html">Our Value</a></li>
@@ -118,8 +137,8 @@
 					</div>
 				</li>
 			</ul>
-			<img class="prevBtn" src="images/btn_prev.png" alt="">
-			<img class="nextBtn" src="images/btn_next.png" alt="">
+			<img class="prevBtn" src="images/btn_prev_2.png" alt="">
+			<img class="nextBtn" src="images/btn_next_2.png" alt="">
 		</div>
 		<div class="content">
 			<ul class="clearfix">
