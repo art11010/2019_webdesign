@@ -2,18 +2,47 @@
 @import "pc.css" all and (min-width:961px);
 @import "tablet.css" all and (max-width:960px);
 
-/*@media all and (max-width:630px){
-	#main_header{height:850px;}
-	#main_header .content li{height:250px;}
-	.content li.content3st .slide2 li.right{height:250px;}
-	.slider_wrap ul li{height: 300px;}
+@media all and (max-width:630px){
+	#main_header{height: 1130px;}
+	/*slide*/
+	.slider_wrap ul li{height: 380px;}
+	.slider_wrap p{font-size:0.8em;}
 	.slider_wrap h3{font-size:2em;}
-	.slider_wrap p{font-size:0.7em;}
+
+	/*content*/
+	#main_header .content li{height: 250px;}
+
+	/*1*/
+	.content li.content1st p{top: 75%;}
+
+	/*3*/
+	.content li.content3rd .slider2 div.right{height: 250px;}
+	.content li.content3rd .slider2 div.left{padding-top:85px;}
 }
 
 @media all and (max-width:520px){
-	#main_header{height:750px;}
-	#main_header .content li{height:200px;}
-	.content li.content3st .slide2 li.right{height:200px;}
-	.content .card p{font-size:1em;}
-}*/
+	#main_header{height: 980px;}
+	/*slide*/
+	.slider_wrap ul li{height: 380px;}
+	.slider_wrap p{font-size:0.8em;}
+	.slider_wrap h3{font-size:2em;}
+
+	/*content*/
+	#main_header .content li{height: 200px;}
+
+	/*2*/
+	.content li.content1st p{display: none;}
+	
+	/*3*/
+	.content li.content3rd .slider2 div.right{height: 200px;}
+	.content li.content3rd .slider2 div.left{padding-top:70px;}
+	li.content3rd .btn{left: 35%;bottom: 15px;}
+	li.content3rd .btn img{width: 30px;height: 30px;}
+
+	/*7*/
+	.content li.content7st{}
+	li.content7st .card h3{top: 70px; font-size:1.2em;}
+	li.content7st .card p{bottom: 20px;	font-size:0.8em;}
+	li.content7st .card img{top:20px; width: 160px;height: 31.2px;}
+	li.content7st .card{width: 300px; height: 180px; bottom: 10px;left: 10px;}
+}
