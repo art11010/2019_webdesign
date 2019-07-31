@@ -45,4 +45,12 @@
 	li.content7st .card p{bottom: 20px;	font-size:0.8em;}
 	li.content7st .card img{top:20px; width: 160px;height: 31.2px;}
 	li.content7st .card{width: 300px; height: 180px; bottom: 10px;left: 10px;}
+
+	/*content*/
+	#content{height: 500px;}
+	.section{width: 100%;}
+	.section > p{padding-top: 20px;}
+	.section li{width: 40%;height: 140px; margin: 35px 5%;}
+	.section li .box h3{font-size: 1.1em;padding-top: 5px;}
+	.section li .box p{display: none;}
 }

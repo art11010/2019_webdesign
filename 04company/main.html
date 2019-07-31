@@ -65,10 +65,11 @@
 				console.log(ye);
 				if(ye == "toggleMenu"){
 					$(this).addClass("change");
+					$("#main_menu").stop().animate({right:0},500);
 				}else{
 					$(this).removeClass("change");
+					$("#main_menu").stop().animate({right:"-100%"},500);
 				}
-
 			});
 		});
 		new WOW().init(); 
