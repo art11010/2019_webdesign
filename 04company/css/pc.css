@@ -204,7 +204,8 @@ text-shadow: 0 0 10px #000,0 0 10px #000;}
 /*content*/
 #content{height: 730px;position: relative;
 	background: url(../images/content_img_01.jpg) no-repeat center fixed;
-	background-size: cover;}
+	background-size: cover;
+	margin-top: 80px;}
 	.section{width : 1260px;height: 730px;
 		color:white;margin: 0 auto;}
 	.section > p{text-align: center;padding-top: 30px;}
