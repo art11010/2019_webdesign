@@ -8,7 +8,8 @@
 	#header_top > a{float:left;margin-left: 40px;}
 
 	#header_top > .toggleMenu{width:50px;height:50px;
-		float: right;position: relative;}
+		float: right;position: relative;
+		z-index: 9999;}
 	.toggleMenu div{width: 35px;height: 5px;background-color: #fff;
 		border-radius: 3px;transition:0.3s;cursor: pointer;
 		position: absolute;right: 35px;}
@@ -23,7 +24,7 @@
 	#main_menu{width: 100%;height: 100%;
 		position: fixed;top: 0;right: 0;
 		background-color: pink/*rgba(255,255,255,0.9)*//*#632475*/;
-		z-index: 99999;}
+		z-index: 999;}
 	#main_menu ul{}
 	#main_menu ul li{margin-bottom: 20px;}
 	#main_menu ul li:nth-child(1){margin-top: 100px;}
