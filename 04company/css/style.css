@@ -65,6 +65,7 @@
 	.slider_wrap p{font-size:0.8em;}
 	.slider_wrap h3{font-size:2em;}
 	.slider_wrap p:after{width: 330px;height: 2px;}
+	.slider_wrap .slider_txt{top: 22%;}
 
 	/*content*/
 	#main_header .content li{height: 200px;}
@@ -97,7 +98,7 @@
 	#content_2 li{height: 200px;}
 	#content_2 li.box_c1{width: 50%;height: 400px !important;}
 	li.box_c1{padding-top:5px;}
-	li.box_c1 img{margin:0 auto;_margin-bottom:0;}
+	li.box_c1 img{margin:0 auto;width: 140px;height: 140px;}
 	li.box_c1 .text_c3{padding:0 10px;font-size: 0.8em;}
 	li.box_c1 h3{text-align:center;font-size: 1.5em;margin-bottom: 25px;}
 
@@ -139,6 +140,7 @@
 	#main_header{height: 888px;}
 	/*slide*/
 	.slider_wrap ul li{height: 325px;}
+	.slider_wrap .slider_txt{top: 17%;}
 	.slider_wrap p{font-size:0.7em;}
 	.slider_wrap h3{font-size:1.9em;}
 	.slider_wrap p:after{width: 300px;height: 2px;}
@@ -150,6 +152,7 @@
 
 	/*2*/
 	.content li.content1st p{display: none;}
+	.content li.content1st img{width: 130px;height: 130px;}
 	
 	/*3*/
 	.content li.content3rd .slider2 div.right{height: 188px;}
@@ -169,14 +172,15 @@
 	.section{width: 100%;}
 	.section > p{padding-top: 20px;}
 	.section li{width: 40%;height: 140px; margin: 35px 5%;}
-	.section li .box h3{font-size: 1.1em;padding-top: 5px;}
+	.section li img{top: -20px;width: 140px;height: 140px;}
+	.section li .box h3{font-size: 1em;padding-top: 5px;}
 	.section li .box p{display: none;}
 
 	/*content_2*/
 	#content_2 li{height: 188px;}
 	#content_2 li.box_c1{width: 50%;height: 376px !important;}
 	li.box_c1{padding-top:5px;}
-	li.box_c1 img{margin:0 auto;_margin-bottom:0;}
+	li.box_c1 img{margin:0 auto;width: 130px;height: 130px;}
 	li.box_c1 .text_c3{padding:0 10px;font-size: 0.8em;}
 	li.box_c1 h3{text-align:center;font-size: 1.5em;margin-bottom: 25px;}
 	
@@ -199,9 +203,9 @@
 	#content_3 li{height: 188px;}
 	#content_3 li h2{font-size: 1.1em;}
 	#content_3 li p{font-size: 0.8em;}
-	#content_3 li a{width: 120px;height: 37px;
-		text-align: center;line-height: 35px;
-		font-size: 0.9em;}
+	#content_3 li a{width: 100px;height: 32px;
+		text-align: center;line-height: 30px;
+		font-size: 0.8em;}
 	#content_3 li.li_c3_1 a,
 	#content_3 li.li_c3_2 a{bottom: 20px;left: 30px;}
 	#content_3 li.li_c3_1 img{width: 144.8px;height: 92px;}
