@@ -140,7 +140,7 @@
 	#main_header{height: 888px;}
 	/*slide*/
 	.slider_wrap ul li{height: 325px;}
-	.slider_wrap .slider_txt{top: 15%;}
+	.slider_wrap .slider_txt{top: 17%;}
 	.slider_wrap p{font-size:0.7em;}
 	.slider_wrap h3{font-size:1.9em;}
 	.slider_wrap p:after{width: 300px;height: 2px;}
@@ -163,10 +163,10 @@
 
 	/*7*/
 	.content li.content7st{}
-	li.content7st .card h3{top: 70px; font-size:1.2em;}
-	li.content7st .card p{bottom: 20px;	font-size:0.8em;}
-	li.content7st .card img{top:20px; width: 160px;height: 31.2px;}
-	li.content7st .card{width: 300px; height: 180px; bottom: 10px;left: 10px;}
+	li.content7st .card h3{top: 55px; font-size:1em;}
+	li.content7st .card p{bottom: 20px;	font-size:0.7em;}
+	li.content7st .card img{top:20px; width: 120px;height: 23.4px;}
+	li.content7st .card{width: 260px; height: 150px; bottom: 5px;left: 10px;}
 
 	/*content*/
 	#content{height: 500px;}
