@@ -136,7 +136,7 @@
 }
 
 @media all and (max-width:375px){
-	#main_header{height: 888px;}
+	#main_header{height: 890px;}
 	/*slide*/
 	.slider_wrap ul li{height: 325px;}
 	.slider_wrap .slider_txt{top: 17%;}
