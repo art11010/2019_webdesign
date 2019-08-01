@@ -133,9 +133,10 @@ text-shadow: 0 0 10px #000,0 0 10px #000;}
 		z-index: 1;position: absolute;}
 	.content li.content3rd .slider2{position: absolute;top: 0;left: 0;width: 630px;}
 	.content li.content3rd .slider2 li{width: 630px !important;}
-	.content li.content3rd .slider2 div{float: left; width: 315px;height: 315px;}
+	.content li.content3rd .slider2 div{background-color: pink;
+		float: left; width: 315px;height: 315px;}
 	.content li.content3rd .slider2 div.left{padding-top:120px;
-		text-align: center;background-color: pink;}
+		text-align: center;}
 		.content li.content3rd .slider2 div.left span{font-weight: bold;}
 		.content li.content3rd .slider2 div.left:after{content:"";border-width:20px;
 			border-style:solid;border-color:transparent transparent transparent #fff;
