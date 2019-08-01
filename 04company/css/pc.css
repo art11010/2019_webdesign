@@ -133,7 +133,7 @@ text-shadow: 0 0 10px #000,0 0 10px #000;}
 		z-index: 1;position: absolute;}
 	.content li.content3rd .slider2{position: absolute;top: 0;left: 0;width: 630px;}
 	.content li.content3rd .slider2 li{width: 630px !important;}
-	.content li.content3rd .slider2 div{background-color: pink;
+	.content li.content3rd .slider2 div{background-color: #fff;
 		float: left; width: 315px;height: 315px;}
 	.content li.content3rd .slider2 div.left{padding-top:120px;
 		text-align: center;}
