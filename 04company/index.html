@@ -71,6 +71,15 @@
 					$("#main_menu").stop().animate({right:"-100%"},500);
 				}
 			});
+			$(window).resize(function(){
+				var wSize = $(window).width();
+				if(wSize > 960){
+					$("#header_top").find(".toggleMenu").removeClass("change");
+				}else{
+					$("#header_top").find(".toggleMenu").removeClass("change");
+					$("#main_menu").css({right:"-100%"});
+				}
+			});
 		});
 		new WOW().init(); 
 	</script>
