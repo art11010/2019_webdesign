@@ -207,4 +207,13 @@
 	#content_3 li.li_c3_1 img{width: 144.8px;height: 92px;}
 	#content_3 li.li_c3_2 img{width: 142.5px;height: 146px;}
 	/*#content_3 li.li_c3_1 img{bottom: 20px;right:20px;}*/
+
+	/*footer*/
+	#footer span{padding: 0 6px;}
+	#footer .p_1{font-size: 0.75em;}
+	#footer .p_2{font-size: 0.65em;}
+
+	/*margin*/
+	#content{margin: 25px 0;}
+	#content_3{margin: 25px auto;}
 }
