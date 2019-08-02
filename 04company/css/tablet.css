@@ -360,15 +360,15 @@ footer{width : 100%; background-color: #fff;
 		#sub_menu2 .active a{color: #fff;}
 		#sub_menu2 a{display:block;font-weight: bold;color:#808080;}
 		/*text*/
-		#sub_txt{padding-top: 170px;color:white;text-align: center;}
-		#sub_txt p{font-size:1.3em;}
-		#sub_txt h3{font-size:2em;padding-top: 10px;}
+		#sub_txt{padding-top: 130px;color:white;text-align: center;}
+		#sub_txt p{font-size:1em;}
+		#sub_txt h3{font-size:1.7em;padding-top: 10px;}
 
 	/*content*/
 	#sub_content{width: 100%;margin: 0 auto;}
 		.sub_img img{width: 100%;}
 		.sub_img p{color:#4c4c4c;font-size:0.9em;
-			margin: 20px 0 0 70px;}
+			margin: 20px 0 0 30px;}
 		.sub_img span{font-weight:bold;font-size: 1.1em;}
 		.sub_img div{display: none;}
 		.sub_img div:first-child{display: block;}
@@ -381,19 +381,20 @@ footer{width : 100%; background-color: #fff;
 	 center /*fixed*/;
 	background-size: cover;
 	margin-bottom: 100px;}
-.sub_content2 h3{padding-top: 50px; color:#fff;
-	font-size:2em;text-align: center;}
+.sub_content2 h3{padding-top: 70px; color:#fff;
+	font-size:1.8em;text-align: center;}
 .sub_content2 .sub2_wrapper{width: 100%;margin: 0 auto;}
-	.sub2_wrap{float: left;width: 30%;height: 300px;
-		text-align: center;
-		margin-top: 50px;_margin-right: 100px;
+	.sub2_wrap{float: left;width: 25%;height: 280px;
+		text-align: center;margin: 50px 4% 0 4%;
 		transition: .5s;}
 	.sub2_wrap:hover{box-shadow: 7px 7px 10px #000;}
-	.sub2_wrap:last-child{margin-right: 0;}
-	.sub2_wrap p{padding-top: 20px;font-size:1.5em;}
+	.sub2_wrap p{padding-top: 20px;font-size:1.3em;}
 	.sub2_wrap img{margin-top: 50px;}
-	.sub2_wrap:first-child img{margin-top: 40px;}
-	.sub2_wrap:last-child img{margin-top: 75px;}
+	.sub2_wrap:nth-child(1) img{width: 108.9px;height: 162px;}
+	.sub2_wrap:nth-child(2) img{width: 159.3px;height: 153px;}
+	.sub2_wrap:nth-child(3) img{width: 180px;height: 126.9px;}
+	/*.sub2_wrap:first-child img{margin-top: 40px;}*/
+	/*.sub2_wrap:last-child img{margin-top: 75px;}*/
 	.sub2_wrap a{color:#fff;}
 
 /*sub content3*/
