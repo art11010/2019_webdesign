@@ -333,7 +333,7 @@ footer{width : 100%; height:200px ;background-color: #fff;
 		margin: 0 auto;}
 	#sub_header_top > a{float:left;padding-top: 25px;margin-left: 25px;}
 	
-	#sub_menu{float:right;}
+	#sub_menu{float:right;margin-top: 10px;}
 	#sub_menu ul{margin-right: 150px;}
 	#sub_menu ul li{float: left;}
 	#sub_menu ul li a{display:block;padding:0 25px;
@@ -348,7 +348,7 @@ footer{width : 100%; height:200px ;background-color: #fff;
 		transition: .3s;}
 	#sub_menu ul li a:hover:after{width: 100%;}
 	#sub_menu .lag{position: absolute;top: 0;right: 0;
-	 margin-right: 40px;}
+	 margin-right: 40px;margin-top: 10px;}
 	#sub_menu .lag li{float: left;}
 	#sub_menu .lag .kro,
 	#sub_menu .lag .eng{display:block;
@@ -356,33 +356,14 @@ footer{width : 100%; height:200px ;background-color: #fff;
 	#sub_menu .lag .kro{background-color: #632475;}
 	#sub_menu .lag .eng{border:1px solid #632475;}
 		#sub_menu .lag .kro>a,
-		#sub_menu .lag .eng>a{padding-left: 10px;line-height:50px;
+		#sub_menu .lag .eng>a{padding-left: 10px;
+			line-height:50px;
 			color:#fff;font-weight:normal;}
-
-	/*#sub_menu{float:right;}
-	#sub_menu ul{padding-top: 25px;margin-right: 25px;}
-	#sub_menu ul li{float: left;}
-	#sub_menu ul li a{display:block;padding:0 30px;
-		color: #ccc;line-height:50px;
-		font-weight:bold;
-		_text-shadow: 0 0 15px #fff,0 0 10px #fff;}
-	#sub_menu ul>li.kro,
-	#sub_menu ul>li.eng{display:block;
-		width: 50px;height: 50px;}
-	#sub_menu ul>li.kro{background-color: #632475;}
-	#sub_menu ul>li.eng{border:1px solid #632475;}
-		#sub_menu ul li.kro>a{color: #fff;text-shadow: none;}
-		#sub_menu ul li.kro>a,
-		#sub_menu ul li.eng>a{padding-left: 10px;font-weight:normal;}*/
-
 		#sub_menu ul li>a:after{content:"";display: block;
 		width: 0;height: 1px;
 		margin-top: -10px;
 		background-color: #fff;
 		transition: .3s;}
-		#sub_menu ul li a:hover:after{width: 100%;}
-		#sub_menu ul li.kro>a:after{display: none;}
-		#sub_menu ul li.eng>a:after{display: none;}
 
 		#sub_menu2{width: 910px;margin: 0 auto; 
 			position: absolute;bottom: 0;
@@ -421,7 +402,7 @@ footer{width : 100%; height:200px ;background-color: #fff;
 	font-size:2em;text-align: center;}
 .sub_content2 .sub2_wrapper{width: 1100px;margin: 0 auto;}
 	.sub2_wrap{float: left;width: 300px;height: 380px;
-		text-align: center;;
+		text-align: center;
 		margin-top: 50px;margin-right: 100px;
 		transition: .5s;}
 	.sub2_wrap:hover{box-shadow: 7px 7px 10px #000;}
@@ -438,7 +419,9 @@ footer{width : 100%; height:200px ;background-color: #fff;
 	.sub_content3 p{margin: 0 auto;width: 425px;
 		padding-top: 65px;
 		font-size:1.2em;font-weight:bold;
-		text-shadow: 0 0 100px #000;}
+		text-shadow: 0 0 100px #000,
+		0 0 50px #fff,
+		0 0 5px #fff;}
 	.sub_content3 h3{padding-top: 270px;
 		font-size:4em;text-align: center;
 		color:#fff;
