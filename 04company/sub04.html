@@ -15,18 +15,20 @@
 	<script src="js/wow.js"></script>
 	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
-		// $(document).ready(function(){
-		// 	$("#sub03_menu2 > ul > li").click(function(){
-		// 		var sub03_num = $(this).index();
-		// 		console.log(sub03_num);
-		// 		$("#sub03_menu2 > ul > li").removeClass();
-		// 		$(this).addClass("active");
-
-		// 		$(".sub03_img > div").hide();
-		// 		$(".sub03_img > div").eq(sub03_num).fadeIn();
-		// 		return false;
-		// 	});
-		// });
+		$(document).ready(function(){
+			$(".toggleMenu").click(function(){
+				var ye = $(this).attr("class");
+				console.log(ye);
+				if(ye == "toggleMenu"){
+					$(this).addClass("change");
+					$("#sub04_menu").stop().animate({right:0},500);
+				}else{
+					$(this).removeClass("change");
+					$("#sub04_menu").stop().animate({right:"-100%"},500);
+				}
+			});
+			return false;
+		});
 	</script>
 </head>
 <body>
@@ -35,24 +37,24 @@
 			<a href="index.html">
 				<img src="images/logo.png" alt="">
 			</a>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 			<nav id="sub04_menu">
 				<ul class="clearfix">
-					<li><a href="sub01.html">Our Value</a></li>
+					<li><a href="sub01.html" class="on">Our Value</a></li>
 					<li><a href="sub02.html">Our Story</a></li>
 					<li><a href="sub03.html">Products</a></li>
-					<li><a href="sub04.html" class="on">Recipes</a></li>
+					<li><a href="sub04.html">Recipes</a></li>
 					<li><a href="sub05.html">About Welch’s</a></li>
+				</ul>
+				<div class="lag">
 					<li class="kro"><a href="#">KRO</a></li>
 					<li class="eng"><a href="#">ENG</a></li>
-				</ul>
+				</div>
 			</nav>
-			<!-- <div id="sub03_menu2">
-				<ul class="clearfix">
-					<li class="active"><a href="#">Sparking</a></li>
-					<li><a href="#">100% Juice</a></li>
-					<li><a href="#">Etc</a></li>
-				</ul>
-			</div -->
 			<div id="sub04_txt">
 				<p>
 					“PEOPLE WANT TO KNOW WHO GREW THEIR FOOD.

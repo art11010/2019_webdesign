@@ -24,12 +24,20 @@
 
 			$(".sub02_img > div").hide();
 			$(".sub02_img > div").eq(sub02_num).fadeIn();
-
-			// $(".sub02_img > div").hide().css({opacity:0});
-			// $(".sub02_img > div").eq(sub02_num).css({display:"block"}).animate({opacity:1});
-
-			return false;
 			});
+
+			$(".toggleMenu").click(function(){
+				var ye = $(this).attr("class");
+				console.log(ye);
+				if(ye == "toggleMenu"){
+					$(this).addClass("change");
+					$("#sub02_menu").stop().animate({right:0},500);
+				}else{
+					$(this).removeClass("change");
+					$("#sub02_menu").stop().animate({right:"-100%"},500);
+				}
+			});
+			return false;
 		});
 	</script>
 </head>
@@ -37,6 +45,11 @@
 	<header id="sub02_header">
 		<div id="sub02_header_top" class="clearfix">
 			<a href="index.html"><img src="images/sub02_logo_01.png" alt=""></a>
+			<div class="toggleMenu">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
 			<nav id="sub02_menu">
 				<ul class="clearfix">
 					<li><a href="sub01.html">Our Value</a></li>
@@ -44,9 +57,11 @@
 					<li><a href="sub03.html">Products</a></li>
 					<li><a href="sub04.html">Recipes</a></li>
 					<li><a href="sub05.html">About Welch’s</a></li>
+				</ul>
+				<div class="lag">
 					<li class="kro"><a href="#">KRO</a></li>
 					<li class="eng"><a href="#">ENG</a></li>
-				</ul>
+				</div>
 			</nav>
 			<div id="sub02_menu2">
 				<ul class="clearfix">
@@ -90,7 +105,7 @@
 				</div>
 			</div>
 			<div>
-				<p class="txt_p2">
+				<p class="txt_p3">
 					> Our Story > <span>How to made</span>
 				</p>
 				<img src="images/sub02_content_img_02.jpg" alt="2">
