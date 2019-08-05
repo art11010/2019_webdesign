@@ -557,35 +557,43 @@ footer{width : 100%; height:200px ;background-color: #fff;
 	#sub03_header_top{width:1260px;height:450px;
 		margin: 0 auto;position: relative;}
 	#sub03_header_top > a{float:left;padding-top: 25px;margin-left: 25px;}
-	
-	#sub03_menu{float:right;height:50px;margin-right: 25px;}
-	#sub03_menu ul{padding-top: 25px;}
-	#sub03_menu ul li{float: left;}
-	#sub03_menu ul li a{display:block;padding:0 30px;
-		color: #fff;line-height:50px;
-		font-weight:bold;}
-	#sub03_menu ul>li.kro,
-	#sub03_menu ul>li.eng{display:block;
-		width: 50px;height: 50px;}
-	#sub03_menu ul>li.kro{background-color: #632475;}
-	#sub03_menu ul>li.eng{border:1px solid #632475;}
-		#sub03_menu ul li.kro>a,
-		#sub03_menu ul li.eng>a{padding-left: 10px;font-weight:normal;}
-
+	#sub03_menu{float:right;margin-top: 10px;}
+		#sub03_menu ul{margin-right: 150px;}
+		#sub03_menu ul li{float: left;}
+		#sub03_menu ul li a{display:block;padding:0 25px;
+			color: #fff;line-height:50px;
+			font-weight:bold;
+			text-shadow: 0 0 5px #000,
+			0 0 30px #000;}
 		#sub03_menu ul li>a:after{content:"";display: block;
+			width: 0;height: 2px;
+			margin-top: -7px;
+			background-color: #fff;
+			transition: .3s;}
+		#sub03_menu ul li a:hover:after{width: 100%;}
+		#sub03_menu .lag{position: absolute;top: 0;right: 0;
+		 margin-right: 40px;margin-top: 10px;}
+		#sub03_menu .lag li{float: left;}
+		#sub03_menu .lag .kro,
+		#sub03_menu .lag .eng{display:block;
+			width: 50px;height: 50px;}
+		#sub03_menu .lag .kro{background-color: #632475;}
+		#sub03_menu .lag .eng{border:1px solid #632475;}
+			#sub03_menu .lag .kro>a,
+			#sub03_menu .lag .eng>a{padding-left: 10px;
+				line-height:50px;
+				color:#fff;font-weight:normal;}
+			#sub03_menu ul li>a:after{content:"";display: block;
 			width: 0;height: 1px;
 			margin-top: -10px;
 			background-color: #fff;
 			transition: .3s;}
-		#sub03_menu ul li a:hover:after{width: 100%;}
-		#sub03_menu ul li.kro>a:after{display: none;}
-		#sub03_menu ul li.eng>a:after{display: none;}
-
 	/*text*/
 	#sub03_txt{padding-top: 180px;color:white;text-align: center;}
 	#sub03_txt p{font-size:1.3em;}
 	#sub03_txt h3{font-size:2em;padding-top: 10px;}
-/*content*/
+	
+	/*content*/
 	#sub03_content{}		
 		.sub03_img{width: 1260px;margin: 0 auto;}
 		/*.sub03_img div{display: none;}
