@@ -646,7 +646,7 @@ footer{width : 100%; background-color: #fff;
 			color: #4c4c4c;
 			border: 1px solid #666;
 			border-radius: 20px;
-			margin-bottom: 70px;
+			_margin-bottom: 70px;
 			margin-right: 20px;}
 		.sub04_img:first-child img{margin-top: 30px;}
 		.sub04_img a:hover{box-shadow: 3px 3px 5px #808080;}
