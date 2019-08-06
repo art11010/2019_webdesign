@@ -132,6 +132,30 @@
 	.sub03_img p{color:#4c4c4c;font-size:0.9em;
 		margin: 20px 0 0 30px;}
 	.sub03_img span{font-weight:bold;font-size: 1.1em;}
+/*----------------------------------------sub04----------------------------------------*/
+	/*header*/
+	#sub04_header{height: 350px;}
+	#sub04_txt{padding-top: 145px;}
+		#sub04_txt p{font-size:1em;}
+		#sub04_txt h3{font-size:1.6em;padding-top: 10px;}
+	/*content*/
+	.sub04_img img{width: 105%;margin-left: -2.5%;}
+	.sub04_img a{width: 130px;height: 35px;
+			font-size: 0.8em;}
+	.sub04_img p{color:#4c4c4c;font-size:0.9em;
+		margin: 20px 0 0 30px;}
+	.sub04_img span{font-weight:bold;font-size: 1.1em;}
+/*----------------------------------------sub05----------------------------------------*/
+	/*header*/
+	#sub05_header{height: 350px;}
+	#sub05_txt{padding-top: 145px;}
+		#sub05_txt p{font-size:1em;}
+		#sub05_txt h3{font-size:1.6em;padding-top: 10px;}
+	/*content*/
+	.sub05_img img{width: 105%;margin-left: -2.5%;}
+	.sub05_img p{color:#4c4c4c;font-size:0.9em;
+		margin: 20px 0 0 30px;}
+	.sub05_img span{font-weight:bold;font-size: 1.1em;}
 }
 
 @media all and (max-width:520px){
@@ -281,7 +305,6 @@
 
 	.height{position: relative;}
 	.height img{position: absolute;top: 90px;}
-
 /*----------------------------------------sub03----------------------------------------*/
 	/*header*/
 	#sub03_header{height: 320px;}
@@ -293,6 +316,31 @@
 	.sub03_img p{color:#4c4c4c;font-size:0.9em;
 		margin: 20px 0 0 20px;}
 	.sub03_img span{font-weight:bold;font-size: 1.1em;}
+/*----------------------------------------sub04----------------------------------------*/
+	/*header*/
+	#sub04_header{height: 320px;}
+	#sub04_txt{padding-top: 145px;}
+		#sub04_txt p{font-size:0.9em;}
+		#sub04_txt h3{font-size:1.5em;padding-top: 10px;}
+	/*content*/
+	.sub04_img img{width: 105%;margin-left: -2.5%;}
+	.sub04_img a{width: 115px;height: 30px;
+			line-height: 28px;
+			font-size: 0.7em;}
+	.sub04_img p{color:#4c4c4c;font-size:0.9em;
+		margin: 20px 0 0 20px;}
+	.sub04_img span{font-weight:bold;font-size: 1.1em;}
+/*----------------------------------------sub05----------------------------------------*/
+	/*header*/
+	#sub05_header{height: 320px;}
+	#sub05_txt{padding-top: 145px;}
+		#sub05_txt p{font-size:0.9em;}
+		#sub05_txt h3{font-size:1.5em;padding-top: 10px;}
+	/*content*/
+	.sub05_img img{width: 105%;margin-left: -2.5%;}
+	.sub05_img p{color:#4c4c4c;font-size:0.9em;
+		margin: 20px 0 0 20px;}
+	.sub05_img span{font-weight:bold;font-size: 1.1em;}
 
 }
 
