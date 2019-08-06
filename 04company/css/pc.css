@@ -2,17 +2,16 @@
 @media all and (min-width:961px){
 
 body{min-width: 1260px;}
-#sub_header > #sub_header_top > #sub_menu > ul> li > a.on{color: #fff;
-text-shadow: -3px 0 5px #b3b3b3,3px 0 5px #b3b3b3,0 0 15px #000;}
-#sub02_header > #sub02_header_top > #sub02_menu > ul> li > a.on{color: #fff;
-text-shadow: 0 0 10px #000;}
+#sub_header > #sub_header_top > #sub_menu > ul> li > a.on{color: #4c4c4c;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 15px #fff,0 0 15px #fff;}
+#sub02_header > #sub02_header_top > #sub02_menu > ul> li > a.on{color: #4c4c4c;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
 #sub03_header > #sub03_header_top > #sub03_menu > ul> li > a.on{color: #4c4c4c;
 text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
-#sub04_header > #sub04_header_top > #sub04_menu > ul> li > a.on{color: #fff;
-text-shadow: 0 0 10px #000,0 0 20px #000;}
-#sub05_header > #sub05_header_top > #sub05_menu > ul> li > a.on{color: #fff;
-text-shadow: 0 0 10px #000,0 0 10px #000;}
-
+#sub04_header > #sub04_header_top > #sub04_menu > ul> li > a.on{color: #4c4c4c;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
+#sub05_header > #sub05_header_top > #sub05_menu > ul> li > a.on{color: #4c4c4c;
+text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
 
 #main_header{height:1950px; position: relative;}
 	#header_top{width:1260px;height:50px;
