@@ -15,33 +15,52 @@
 	<script src="js/wow.js"></script>
 	<script>
 		$(document).ready(function(){
-			$("#fullpage").fullpage();
+			$("#fullPage").fullpage({
+				// anchors : ["1st","2nd","3rd","4st"],
+				// menu : topPage
+				navigation:true
+			});
 		});
 	</script>
 </head>
 <body>
-	<nav id="navTop">
-		<ul id="toggleMenu">
-			<li class="bar1"></li>
-			<li class="bar2"></li>
-		</ul>
-		<ul id="topMenu">
+		<!-- <div id="toggleMenu">
+			<ul>
+				<li class="bar1"></li>
+				<li class="bar2"></li>
+			</ul>
+		</div> -->
+		<!-- <div id="midMenu">
+			<ul>
+				<li>양치도감</li>
+				<li>세탁도감</li>
+				<li>세정도감</li>
+				<li>Where to buy</li>
+				<li>Contact us</li>
+			</ul>
+		</div> -->
+	<nav id="navPage">
+		<ul id="topPage">
 			<li data-menuanchor="1st"><a href="#1st">page1</a></li>
 			<li data-menuanchor="2nd"><a href="#2nd">page2</a></li>
 			<li data-menuanchor="3rd"><a href="#3rd">page3</a></li>
 			<li data-menuanchor="4st"><a href="#4st">page4</a></li>
 		</ul>
-		<ul id="midMenu">
-			<li>양치도감</li>
-			<li>세탁도감</li>
-			<li>세정도감</li>
-			<li>Where to buy</li>
-			<li>Contact us</li>
-		</ul>
 	</nav>
-	<div id="fullpage">
+	<div id="fullPage">
 		<section id="page1" class="section page" data-anchor="1st"></section>
-		<section id="page2" class="section page" data-anchor="2nd"></section>
+		<section id="page2" class="section page" data-anchor="2nd">
+			<div class="slide">
+				<div class="sView1">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, maxime!
+				</div>
+			</div>
+			<div class="slide">
+				<div class="sView2">
+					Voluptatem in, cum ea aut, magni beatae repudiandae quis assumenda.
+				</div>
+			</div>
+		</section>
 		<section id="page3" class="section page" data-anchor="3rd"></section>
 		<section id="page4" class="section page" data-anchor="4st"></section>
 	</div>
