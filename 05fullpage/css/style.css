@@ -17,6 +17,10 @@
 		#navPage ul a{display: block;
 			text-indent: -9999px;}
 		#navPage ul li:hover{margin-left:0;width: 70px;height: 2px;}*/
+		#fp-nav ul li{width: 50px;height: 4px;
+			border-radius: none; _text-align: none;}
+		#fp-nav ul a{width: 50px;height: 4px;border-radius: none;}
+		#fp-nav ul li a span{width: 50px;height: 4px;border-radius: none;}
 	/*midMenu*/
 
 
