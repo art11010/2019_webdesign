@@ -20,36 +20,51 @@
 				// menu : topPage
 				navigation:true
 			});
+			$(".toggleMenu").click(function(){
+				var Tid = $(this).attr("class");
+				console.log(Tid);
+				if(Tid == "toggleMenu"){
+					$(this).addClass("change");
+					$("#fp-nav").fadeOut();
+					$("#midMenu").stop().animate({top:0},500);
+				}else{
+					$(this).removeClass("change");
+					$("#fp-nav").fadeIn();
+					$("#midMenu").stop().animate({top:"-100%"},500);
+				}
+			});
 		});
 	</script>
 </head>
 <body>
-		<!-- <div id="toggleMenu">
+	<img id="logo" src="images/logo.jpg" alt="">
+		<div class="toggleMenu">
 			<ul>
 				<li class="bar1"></li>
 				<li class="bar2"></li>
 			</ul>
-		</div> -->
-		<!-- <div id="midMenu">
-			<ul>
-				<li>양치도감</li>
-				<li>세탁도감</li>
-				<li>세정도감</li>
-				<li>Where to buy</li>
-				<li>Contact us</li>
+		</div>
+		<div id="midMenu">
+			<ul class="clearfix">
+				<li><a href="#">양치도감</a></li>
+				<li><a href="#">세탁도감</a></li>
+				<li><a href="#">세정도감</a></li>
+				<li><a href="#">Where to buy</a></li>
+				<li><a href="#">Contact us</a></li>
 			</ul>
-		</div> -->
-	<nav id="navPage">
+		</div>
+	<!-- <nav id="navPage">
 		<ul id="topPage">
 			<li data-menuanchor="1st"><a href="#1st">page1</a></li>
 			<li data-menuanchor="2nd"><a href="#2nd">page2</a></li>
 			<li data-menuanchor="3rd"><a href="#3rd">page3</a></li>
 			<li data-menuanchor="4st"><a href="#4st">page4</a></li>
 		</ul>
-	</nav>
+	</nav> -->
 	<div id="fullPage">
 		<section id="page1" class="section page" data-anchor="1st"></section>
-		<section id="page2" class="section page" data-anchor="2nd">
+		<section id="page2" class="section page" data-anchor="2nd"></section>
+		<section id="page3" class="section page" data-anchor="3rd">
 			<div class="slide">
 				<div class="sView1">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, maxime!
@@ -61,7 +76,6 @@
 				</div>
 			</div>
 		</section>
-		<section id="page3" class="section page" data-anchor="3rd"></section>
 		<section id="page4" class="section page" data-anchor="4st"></section>
 	</div>
 </body>
