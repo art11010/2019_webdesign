@@ -129,37 +129,39 @@
 	.products .img_2{background: url(../images/page_44.jpg);}
 	.products .img_3{background: url(../images/page_49.jpg);}
 
-	/*.products img{float: left;display: block;
+	.products img{float: left;display: block;
 		width: 33.33%;position: relative;}
 	.products > div .box{width: 33.33%;height: 100%;
-		position: absolute;top: 0;;z-index: 5;
+		position: absolute;top: 0;;z-index: 1;
 		background: rgba(0,0,0,0.5);transition: 0.5s;
 		_cursor: pointer;}
 		.products > div .box:hover{opacity: 0;}
 		.products .img_1 .box{left: 0;}
 		.products .img_2 .box{left: 33.33%;}
-		.products .img_3 .box{left: 66.66%;}*/
+		.products .img_3 .box{left: 66.66%;}
 	
-	/*.products > div h3{width: 100px;height: 40px;
-		color: #4d4d4d;border-radius:20px;
-		padding-left: 15px;
-		position: absolute;z-index: 2;
+	.products > div h3{width: 30px;height: 160px;
+		font-size: 1.7em;_background-color: pink;
+		color: #4d4d4d;position: absolute;z-index: 1;
 		top: 25%;transform:translateY(-50%);}
+		.products > div h3:after{content:"";display: block;
+			width: 5px;height: 70px;background-color: #4d4d4d;
+			margin: -150px 0 0 -15px;opacity: 1;}
 		.products .img_1 h3{left: 16.67%;transform:translateX(-50%);}
 		.products .img_2 h3{left: 50.01%;transform:translateX(-50%);}
 		.products .img_3 h3{left: 83.35%;transform:translateX(-50%);}
 
 	.products > div a{width: 100px;height: 40px;
-		border:1px solid #4d4d4d;
+		border:1px solid #808080;
 		color: #4d4d4d;border-radius:20px;
 		padding-left: 15px;
 		text-align: left;line-height: 35px;
-		position: absolute;z-index: 1;
-		bottom: 100px;
-		_top: %;_transform:translateY(-50%);}
-		.products > div a:hover{box-shadow: 0 0 10px #fff;
+		position: absolute;z-index: 2;
+		bottom: 100px;}
+		.products > div a:hover{_box-shadow: 0 0 10px #fff;
 			text-shadow: 0 0 5px #fff,
 			0 0 5px #fff;}
 		.products .img_1 a{left: 5%;}
 		.products .img_2 a{left: 38.33%;}
-		.products .img_3 a{left: 71.66%;}*/
+		.products .img_3 a{left: 71.66%;}
+		.products > div a img{display: block;padding: 10px 10px 0 0;}
