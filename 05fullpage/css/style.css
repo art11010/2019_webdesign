@@ -136,7 +136,7 @@
 		width: 33.33%;position: relative;}
 	.products > div .box{width: 33.33%;height: 100%;
 		position: absolute;top: 0;;z-index: 1;
-		background: rgba(0,0,0,0.5);transition: 0.5s;
+		background: rgba(0,0,0,0.5);transition: 1s;
 		_cursor: pointer;}
 		.products > div .box:hover{opacity: 0;}
 		.products .img_1 .box{left: 0;}
@@ -161,7 +161,7 @@
 		text-align: left;line-height: 35px;
 		position: absolute;z-index: 2;
 		bottom: 15%;}
-		.products > div a:hover{_box-shadow: 0 0 10px #fff;
+		.products > div a:hover{box-shadow: 0 0 10px #fff;
 			text-shadow: 0 0 5px #fff,
 			0 0 5px #fff;}
 		.products .img_1 a{left: 5%;}
