@@ -33,11 +33,15 @@
 					$("#midMenu").stop().animate({top:"-100%"},500);
 				}
 			});
+			$(".up > .img_1").mouseover(function(){
+				$(".up > .img_1").stop().animate({opacity:"0"},400);
+				$(".up > .img_1_1").stop().animate({opacity:"1"},600);
+			});
 		});
 	</script>
 </head>
 <body>
-	<img id="logo" src="images/logo.jpg" alt="">
+	<img class="logo" src="images/logo.jpg" alt="">
 		<div class="toggleMenu">
 			<ul>
 				<li class="bar1"></li>
@@ -62,8 +66,30 @@
 		</ul>
 	</nav> -->
 	<div id="fullPage">
-		<section id="page1" class="section page" data-anchor="1st"></section>
-		<section id="page2" class="section page" data-anchor="2nd"></section>
+		<section id="page1" class="section page" data-anchor="1st">
+			<div class="txt_p1 clearfix">
+				<p class="p_1">생활도감<br>양치도감</p>
+				<p class="p_2">하루의<br>상쾌한 시작을 위한,</p>
+				<p class="p_3">좋은 치약<br>좋은 칫솔<br>좋은 혀클리너</p>
+			</div>
+			<div class="scroll">
+				<p>SRCOLL</p>
+				<img src="images/scroll.png" alt="">
+			</div>
+			<div class="up">
+				<img class="img_1" src="images/page_10.png" alt="">
+				<img class="img_1_1" src="images/page_10_1.png" alt="">
+				<img class="img_2" src="images/page_11.png" alt="">
+				<img class="img_3" src="images/page_12.png" alt="">
+				<img class="img_4" src="images/page_13.png" alt="">
+				<img class="img_5" src="images/page_17.png" alt="">
+			</div>
+		</section>
+		<section id="page2" class="section page" data-anchor="2nd">
+			 <div class="youtube">
+			 	<!-- <iframe width="700" height="700" src="https://www.youtube.com/embed/EBJlWl7izCQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+			 </div>
+		</section>
 		<section id="page3" class="section page" data-anchor="3rd">
 			<div class="slide">
 				<div class="sView1">
@@ -76,7 +102,27 @@
 				</div>
 			</div>
 		</section>
-		<section id="page4" class="section page" data-anchor="4st"></section>
+		<section id="page4" class="section page" data-anchor="4st">
+			<div class="products clearfix">
+				<div class="img_1">
+					<a href="#">more</a>
+					<div class="box"></div>
+					<img src="images/page_43.jpg" alt="">
+				</div>
+				<div class="img_2">
+					<a href="#">more</a>
+					<div class="box"></div>
+					<img src="images/page_44.jpg" alt="">
+				</div>
+				<div class="img_3">
+					<a href="#">more</a>
+					<div class="box"></div>
+					<img src="images/page_49.jpg" alt="">
+				</div>
+			</div>
+		</section>
+		<section id="page5" class="section page" data-anchor="5st">
+		</section>
 	</div>
 </body>
 </html>
