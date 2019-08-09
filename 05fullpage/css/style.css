@@ -46,9 +46,9 @@
 			background-size:cover;}
 		#page1{background-image:url(../images/cont006.jpg);}
 		#page2{background-image:url(../images/cont011.jpg);}
-		#page3{background-image:url(../images/cont012.jpg);}
+		#page3{background: #aaa;}
 		#page4{background:gray;}
-		#page5{background-image:url(../images/cont009.jpg);}
+		#page5{background-image:url(../images/cont006.jpg);}
 
 /*page1*/
 	#page1{position: relative;}
@@ -114,12 +114,13 @@
 		margin:-250px 0 0 250px;}
 
 /*page3*/
-	.slide{position: relative;}
+	.slide{_position: relative;}
 	.slide .sView1,
-	.slide .sView2{position: absolute;width: 1024px;height: 500px;
-		left: 50%;transform: translate(-50%,-50%);}
-	.sView1{background-color: #f00;}
-	.sView2{background-color: #0f0;}
+	.slide .sView2{width: 100%;height: 100%;}
+	.sView1{background: url(../images/cont009.jpg) no-repeat center;
+		background-size:cover;_background-color: #f00;}
+	.sView2{background: url(../images/cont010.jpg) no-repeat center;
+		background-size:cover;background-color: #0f0;}
 
 /*page4*/
 	#page4{_position: relative;}
@@ -168,3 +169,47 @@
 		.products .img_2 a{left: 38.33%;}
 		.products .img_3 a{left: 71.66%;}
 		.products > div a img{display: block;padding: 10px 10px 0 0;}
+
+/*page5*/
+	#page5{position: relative;}
+	.column{}
+	.column img{transform: rotate(45deg);margin-left: 150px;}
+
+	.column .img_1 img{}
+	.column .img_2 img{}
+	.column .img_3 img{}
+
+ 	.column .img_1{width: 150%;height: 33.33%;_background-color: skyblue;
+ 		overflow: hidden;
+ 		position: absolute;top: 10%;
+		animation: ji 3s infinite ease-in-out alternate;}
+ 	.column .img_2{width: 150%;height: 33.33%;_background-color: pink;
+ 		overflow: hidden;
+ 		position: absolute;top: 40%;
+ 		animation: jii 3s infinite ease-in-out alternate;}
+	.column .img_3{width: 150%;height: 33.33%;_background-color: orange;
+		overflow: hidden;
+		position: absolute;top: 70%;
+ 		animation: jiii 3s infinite ease-in-out alternate;} 	
+
+ 		@keyframes ji{
+ 			from{left:-250px;}
+ 			to{left:-10px;}
+ 		}
+ 		@keyframes jii{
+ 			from{left:-10px;}
+ 			to{left:-250px;}
+ 		}
+ 		@keyframes jiii{
+ 			from{left:-250px;}
+ 			to{left:-10px;}
+ 		}
+
+ 		/*.scroll{position: absolute;z-index: 4;
+		left: 50%;transform: translateX(-50%);
+		text-align: center;transition: 0.5s;
+		animation: ye 1.2s infinite ease-in-out alternate;}
+		@keyframes ye{
+			from{bottom: -3px;}
+			to{bottom: 30px;}
+		}*/

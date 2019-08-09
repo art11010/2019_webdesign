@@ -18,7 +18,13 @@
 			$("#fullPage").fullpage({
 				// anchors : ["1st","2nd","3rd","4st"],
 				// menu : topPage
-				navigation:true
+				navigation:true,
+				afterRender: function () {
+			        //on page load, start the slideshow
+			         slideTimeout = setInterval(function () {
+			                $.fn.fullpage.moveSlideRight();
+			            }, 3000);
+			    }
 			});
 			$(".toggleMenu").click(function(){
 				var Tid = $(this).attr("class");
@@ -81,12 +87,12 @@
 				<img src="images/scroll.png" alt="">
 			</div>
 			<div class="up">
-				<img class="img_1" src="images/page_10.png" alt="">
-				<img class="img_1_1" src="images/page_10_1.png" alt="">
+				<img class="img_1" src="images/page_50_1.png" alt="">
+				<img class="img_1_1" src="images/page_50_2.png" alt="">
 				<img class="img_2" src="images/page_11.png" alt="">
 				<img class="img_3" src="images/page_12.png" alt="">
 				<img class="img_4" src="images/page_13.png" alt="">
-				<img class="img_5" src="images/page_17.png" alt="">
+				<img class="img_5" src="images/page_14.png" alt="">
 			</div>
 		</section>
 		<section id="page2" class="section page" data-anchor="2nd">
@@ -126,6 +132,49 @@
 			</div>
 		</section>
 		<section id="page5" class="section page" data-anchor="5st">
+			<div class="column">
+				<div class="img_1">
+					<img src="images/page_50_1.png" alt="">
+					<img src="images/page_50_2.png" alt="">
+					<img src="images/page_50_3.png" alt="">
+					<img src="images/page_50_4.png" alt="">
+					<img src="images/page_50_5.png" alt="">
+					<img src="images/page_50_1.png" alt="">
+					<img src="images/page_50_2.png" alt="">
+					<img src="images/page_50_3.png" alt="">
+					<img src="images/page_50_4.png" alt="">
+					<img src="images/page_50_5.png" alt="">
+					<img src="images/page_50_1.png" alt="">
+				</div>
+				<div class="img_2">
+					<img src="images/page_51_1.png" alt="">
+					<img src="images/page_51_2.png" alt="">
+					<img src="images/page_51_3.png" alt="">
+					<img src="images/page_51_4.png" alt="">
+					<img src="images/page_51_1.png" alt="">
+					<img src="images/page_51_2.png" alt="">
+					<img src="images/page_51_3.png" alt="">
+					<img src="images/page_51_4.png" alt="">
+					<img src="images/page_51_1.png" alt="">
+					<img src="images/page_51_2.png" alt="">
+					<img src="images/page_51_3.png" alt="">
+					<img src="images/page_51_4.png" alt="">
+				</div>
+				<div class="img_3 ">
+					<img src="images/page_52_1.png" alt="">
+					<img src="images/page_52_2.png" alt="">
+					<img src="images/page_52_3.png" alt="">
+					<img src="images/page_52_4.png" alt="">
+					<img src="images/page_52_1.png" alt="">
+					<img src="images/page_52_2.png" alt="">
+					<img src="images/page_52_3.png" alt="">
+					<img src="images/page_52_4.png" alt="">
+					<img src="images/page_52_1.png" alt="">
+					<img src="images/page_52_2.png" alt="">
+					<img src="images/page_52_3.png" alt="">
+					<img src="images/page_52_4.png" alt="">
+				</div>
+			</div>
 		</section>
 	</div>
 </body>
