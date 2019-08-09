@@ -23,7 +23,7 @@
 			        //on page load, start the slideshow
 			         slideTimeout = setInterval(function () {
 			                $.fn.fullpage.moveSlideRight();
-			            }, 3000);
+			            }, 6000);
 			    }
 			});
 			$(".toggleMenu").click(function(){
@@ -33,10 +33,14 @@
 					$(this).addClass("change");
 					$("#fp-nav").fadeOut();
 					$("#midMenu").stop().animate({top:0},500);
+					$(".logo").stop().animate({left:"50%"})
+					.css("transform","translateX(-50%)");
 				}else{
 					$(this).removeClass("change");
 					$("#fp-nav").fadeIn();
 					$("#midMenu").stop().animate({top:"-100%"},500);
+					$(".logo").stop().animate({left:30})
+					.css("transform","translateX(0)");
 				}
 			});
 			$(".up > .img_1").mouseover(function(){
@@ -123,21 +127,24 @@
 		<section id="page4" class="section page" data-anchor="4st">
 			<div class="products clearfix">
 				<div class="img_1">
-					<h3>양치도감</h3>
 					<a href="#">
-						<div class="box"></div>
+						<h3>양치도감</h3>
+						<div class="box">
+						</div>
 					</a>
 				</div>
 				<div class="img_2">
-					<h3>세탁도감</h3>
 					<a href="#">
-						<div class="box"></div>
+						<h3>세탁도감</h3>
+						<div class="box">
+						</div>
 					</a>
 				</div>
 				<div class="img_3">
-					<h3>세정도감</h3>
 					<a href="#">
-						<div class="box"></div>
+						<h3>세정도감</h3>
+						<div class="box">
+						</div>
 					</a>
 				</div>
 			</div>
@@ -145,46 +152,109 @@
 		<section id="page5" class="section page" data-anchor="5st">
 			<div class="column">
 				<div class="img_1">
-					<img src="images/page_50_1.png" alt="">
-					<img src="images/page_50_2.png" alt="">
-					<img src="images/page_50_3.png" alt="">
-					<img src="images/page_50_4.png" alt="">
-					<img src="images/page_50_5.png" alt="">
-					<img src="images/page_50_1.png" alt="">
-					<img src="images/page_50_2.png" alt="">
-					<img src="images/page_50_3.png" alt="">
-					<img src="images/page_50_4.png" alt="">
-					<img src="images/page_50_5.png" alt="">
-					<img src="images/page_50_1.png" alt="">
+					<img src="images/page_50_1.png" alt="1">
+					<img src="images/page_50_2.png" alt="2">
+					<img src="images/page_50_3.png" alt="3">
+					<img src="images/page_50_4.png" alt="4">
+					<img src="images/page_50_5.png" alt="5">
+					<img src="images/page_50_1.png" alt="6">
+					<img src="images/page_50_2.png" alt="7">
+					<img src="images/page_50_3.png" alt="8">
+					<img src="images/page_50_4.png" alt="9">
+					<img src="images/page_50_5.png" alt="10">
+					<img src="images/page_50_1.png" alt="11">
+					<img src="images/page_50_2.png" alt="12">
+					<img src="images/page_50_3.png" alt="13">
 				</div>
 				<div class="img_2">
-					<img src="images/page_51_1.png" alt="">
-					<img src="images/page_51_2.png" alt="">
-					<img src="images/page_51_3.png" alt="">
-					<img src="images/page_51_4.png" alt="">
-					<img src="images/page_51_1.png" alt="">
-					<img src="images/page_51_2.png" alt="">
-					<img src="images/page_51_3.png" alt="">
-					<img src="images/page_51_4.png" alt="">
-					<img src="images/page_51_1.png" alt="">
-					<img src="images/page_51_2.png" alt="">
-					<img src="images/page_51_3.png" alt="">
-					<img src="images/page_51_4.png" alt="">
+					<img src="images/page_51_1.png" alt="1">
+					<img src="images/page_51_2.png" alt="2">
+					<img src="images/page_51_3.png" alt="3">
+					<img src="images/page_51_4.png" alt="4">
+					<img src="images/page_51_1.png" alt="5">
+					<img src="images/page_51_2.png" alt="6">
+					<img src="images/page_51_3.png" alt="7">
+					<img src="images/page_51_4.png" alt="8">
+					<img src="images/page_51_1.png" alt="9">
+					<img src="images/page_51_2.png" alt="10">
+					<img src="images/page_51_3.png" alt="11">
+					<img src="images/page_51_4.png" alt="12">
+					<img src="images/page_51_1.png" alt="13">
 				</div>
 				<div class="img_3 ">
-					<img src="images/page_52_1.png" alt="">
-					<img src="images/page_52_2.png" alt="">
-					<img src="images/page_52_3.png" alt="">
-					<img src="images/page_52_4.png" alt="">
-					<img src="images/page_52_1.png" alt="">
-					<img src="images/page_52_2.png" alt="">
-					<img src="images/page_52_3.png" alt="">
-					<img src="images/page_52_4.png" alt="">
-					<img src="images/page_52_1.png" alt="">
-					<img src="images/page_52_2.png" alt="">
-					<img src="images/page_52_3.png" alt="">
-					<img src="images/page_52_4.png" alt="">
+					<img src="images/page_52_1.png" alt="1">
+					<img src="images/page_52_2.png" alt="2">
+					<img src="images/page_52_3.png" alt="3">
+					<img src="images/page_52_4.png" alt="4">
+					<img src="images/page_52_1.png" alt="5">
+					<img src="images/page_52_2.png" alt="6">
+					<img src="images/page_52_3.png" alt="7">
+					<img src="images/page_52_4.png" alt="8">
+					<img src="images/page_52_1.png" alt="9">
+					<img src="images/page_52_2.png" alt="10">
+					<img src="images/page_52_3.png" alt="11">
+					<img src="images/page_52_4.png" alt="12">
+					<img src="images/page_52_1.png" alt="13">
 				</div>
+			</div>
+			<div class="slide">
+				<ul class="row clearfix">
+					<li>
+						<img src="images/img024.jpg" alt="">
+					</li>
+					<li>
+						<div class="txt_1">
+							<h3>
+								건강한 습관 만들기
+							</h3>
+							<p>
+								양치질을 깨끗하게 하는데도,<br>
+								입 속이 텁텁하거나 입냄새가 사라지지 않나요?<br>
+								사실 입 속 세균을 효과적으로 없애기 위해서는<br>
+								혀클리너를 사용하여 혀를 닦는 것이 매우 중요합니다.<br>
+								생활도감은 내 청결을 지키기 위한<br>
+								건강한 습관 두가지를 전합니다.
+								<!-- 생활도감은 내 입 속 건강을 지키기 위한<br>
+								건강한 습관 두가지를 전합니다. -->
+							</p>
+							<h3>
+								바르게 선택하고, 바르게 사용하기.
+							</h3>
+							<p>
+								여러분의 더 기분 좋은 생활을 위하여,<br>
+								지금부터 시작합니다.
+							</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="slide">
+				<ul class="row clearfix">
+					<li>
+						<img src="images/img021.jpg" alt="">
+					</li>
+					<li>
+						<div class="txt_1">
+							<h3>
+								건강한 습관 만들기
+							</h3>
+							<p>
+								하루의 시작과 마무리를 함께하는 일상용품, 치약<br>
+								그만큼 치약은 하루의 기분까지 결정할 만큼<br>
+								아주 중요한 물건입니다.<br>
+								생활도감은 내 치아를 지키기 위한<br>
+								건강한 습관 두가지를 전합니다.
+							</p>
+							<h3>
+								바르게 선택하고, 바르게 사용하기.
+							</h3>
+							<p>
+								여러분의 더 기분 좋은 생활을 위하여,<br>
+								지금부터 시작합니다.
+							</p>
+						</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 	</div>
