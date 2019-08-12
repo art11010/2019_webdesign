@@ -29,7 +29,7 @@
 /*midMenu*/
 	#midMenu{z-index: 2;position:fixed;
 		width: 100%;height: 100%;top: -100%;
-		background: rgba(255,255,255,0.7)/*url(../images/menu001.jpg)*/;}
+		background: /*rgba(255,255,255,0.9)*/url(../images/cont016.jpg);}
 	#midMenu ul{position: absolute;width: 690px;
 		_background-color: pink;margin: 0 auto;
 		top: 50%;left: 50%;transform:translate(-50%,-50%);}
@@ -38,6 +38,7 @@
 	#midMenu ul li a{display: block;width: 30px;
 		font-weight: bold;font-size: 2em;
 		color:#4d4d4d;}
+		#midMenu ul li a:hover{color:#000;}
 		
 /*fullpage*/
 	#fullPage{width: 100%;height: 100%;_z-index: 2;}
@@ -53,7 +54,8 @@
 /*page1*/
 	#page1{position: relative;}
 	/*txt*/
-	.txt_p1{position: absolute;width: 100%;background-color: #fff;}
+	.txt_p1{position: absolute;width: 100%;top: 150px;opacity: 0;transition: 1.5s;}
+		.txt_p1.move{position: absolute;width: 100%;top: 75px;opacity: 1;}
 	.txt_p1 p{float: left;position: absolute;
 		margin-top: 100px;font-weight: bold;}
 	.txt_p1 .p_1{left: 100px;
@@ -85,13 +87,14 @@
 		_background-color: #fff;}
 	.up img{position: absolute;transition: 0.5s;}
 	/*.up .img_1:hover{bottom: 100px;opacity: 0;}*/
+	.up .img_1:hover,
 	.up .img_2:hover,
 	.up .img_3:hover{bottom: 150px;}
 
 	.up .img_1{width: 70px;height: 350px;
 		bottom: 100px;left: 460px;cursor: pointer;z-index: 2;}
-	.up .img_1_1{width: 70px;height: 350px;opacity: 0;
-		bottom: 100px;left: 460px;cursor: pointer;z-index: 1;}
+	/*.up .img_1_1{width: 70px;height: 350px;opacity: 0;
+		bottom: 100px;left: 460px;cursor: pointer;z-index: 1;}*/
 
 	.up .img_2{width: 70px;height: 350px;
 		bottom: 100px;left: 555px;cursor: pointer;z-index: 2;}
@@ -103,19 +106,10 @@
 		bottom: 0;left: 50%;
 		transform: translateX(-50%);z-index: 1}
 
-	/*page2*/
-	#page2{width: 100%;height: 100%;}
-	/*.youtube{width: 800px;height: 800px;}*/
-	iframe{margin: 0 auto;}
-
 /*page2*/
-	#page2{position: relative;}
-	.youtube{width: 100%;_height: 100%;}
-	.youtube video{width: auto;height: auto;position: absolute;
+	#page2{position: relative;overflow: hidden;}
+	#page2 video{width: auto;height: auto;position: absolute;
 		top: 50%;left: 50%;transform:translate(-50%,-50%);}
-	/*#videobcg{position: absolute;top: 0;left: 0;
-		min-width: 100%;min-height: 100%;
-		width: auto;height: auto;z-index: -1000;overflow: hidden;}*/
 
 /*page3*/
 	#page3 .slide{_position: relative;}
@@ -138,7 +132,7 @@
 		.slide > div a img{display: block;padding: 10px 10px 0 0;}
 
 /*page4*/
-	#page4{_position: relative;}
+	#page4{overflow: hidden;}
 	.products{width: 100%;height: 100%;}
 	.products > div{float: left;width: 33.33%;height: 100%;}
 	.products .img_1{background: url(../images/page_43.jpg) no-repeat center top;
@@ -157,16 +151,23 @@
 	.products > div a h3{width: 30px;height: 160px;
 		font-size: 1.7em;_background-color: pink;
 		color: #4d4d4d;position: absolute;
-		top: 25%;left: 50%;transform:translate(-50%,-50%);}
+		top: 20%;left: 50%;transform:translate(-50%,-50%);
+		opacity:0;transition: 1s;}
 		.products > div h3:after{content:"";display: block;
 			width: 5px;height: 70px;background-color: #4d4d4d;
-			margin: -150px 0 0 -15px;opacity: 1;}
+			margin: -150px 0 0 -15px;}
+	.products.move > div a h3{width: 30px;height: 160px;
+		font-size: 1.7em;_background-color: pink;
+		color: #4d4d4d;position: absolute;
+		top: 25%;left: 50%;transform:translate(-50%,-50%);
+		opacity: 1;}
+		.products.move > div h3:after{content:"";display: block;
+			width: 5px;height: 70px;background-color: #4d4d4d;
+			margin: -150px 0 0 -15px;
+			opacity: 1;}
 
 /*page5*/
 	#page5{position: relative;}
-	/*slide2*/
-	/*#page5 .slide{padding-left: 10%;}
-	#page5 .slide:_last-child{padding-left: -10%;}*/
 	.row{_background-color: #fff;}
 	.row li{float: left;text-align: center;_background-color: pink;}
 	.row li:first-child{width: 30%;margin-right: 5%;}
@@ -176,16 +177,15 @@
 	.row li:last-child{width: 65%;}
 
 	.row .txt_1{width: 100%;height: 100%;color:#4d4d4d;
-		text-shadow:0 0 15px #fff,
-		0 0 20px #fff,
+		text-shadow:0 0 10px #fff,
 		0 0 15px #fff,
 		0 0 20px #fff;
 		_background-color: skyblue;}
-	.row .txt_1 h3{font-size: 2.5em;margin-bottom: 5%;
-		line-height: 40px;
+	.row .txt_1 h3{font-size: 2.5em;
+		margin: 5% 0;
 		_background-color: pink;}
 	.row .txt_1 p{font-size: 1.2em;font-weight: bold;
-		margin-bottom: 5%;}
+		margin-top: -50px;}
 	.row .p_1{margin-bottom: 0;
 		_background-color: pink;}
 

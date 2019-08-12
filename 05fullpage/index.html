@@ -19,11 +19,24 @@
 				// anchors : ["1st","2nd","3rd","4st"],
 				// menu : topPage
 				navigation:true,
-				afterRender: function () {
-			        //on page load, start the slideshow
-			         slideTimeout = setInterval(function () {
-			                $.fn.fullpage.moveSlideRight();
-			            }, 6000);
+				afterLoad:function(anchorslink,index){
+					console.log("anchor : " + anchorslink + ", index : " + index);
+					if(index == 1){
+						$(".txt_p1").addClass("move");
+					}else{
+						$(".txt_p1").removeClass("move");
+					}
+					if(index == 3){
+						$(".products").addClass("move");
+					}else{
+						$(".products").removeClass("move");
+					}
+				},
+				afterRender: function(){//on page load, start the slideshow
+					slideTimeout = setInterval(function(){
+						$.fn.fullpage.moveSlideRight();
+					}, 5000);
+					
 			    }
 			});
 			$(".toggleMenu").click(function(){
@@ -43,14 +56,14 @@
 					.css("transform","translateX(0)");
 				}
 			});
-			$(".up > .img_1").mouseover(function(){
-				$(".up > .img_1").stop().animate({opacity:"0"},400);
-				$(".up > .img_1_1").stop().animate({opacity:"1"},600);
-			});
-			$(".up > .img_1").mouseout(function(){
-				$(".up > .img_1").stop().animate({opacity:"1"},400);
-				$(".up > .img_1_1").stop().animate({opacity:"0"},600);
-			});
+			// $(".up > .img_1").mouseover(function(){
+			// 	$(".up > .img_1").stop().animate({opacity:"0"},400);
+			// 	$(".up > .img_1_1").stop().animate({opacity:"1"},600);
+			// });
+			// $(".up > .img_1").mouseout(function(){
+			// 	$(".up > .img_1").stop().animate({opacity:"1"},400);
+			// 	$(".up > .img_1_1").stop().animate({opacity:"0"},600);
+			// });
 		});
 	</script>
 </head>
@@ -92,7 +105,6 @@
 			</div>
 			<div class="up">
 				<img class="img_1" src="images/page_50_1.png" alt="">
-				<img class="img_1_1" src="images/page_50_2.png" alt="">
 				<img class="img_2" src="images/page_11.png" alt="">
 				<img class="img_3" src="images/page_12.png" alt="">
 				<img class="img_4" src="images/page_13.png" alt="">
@@ -100,13 +112,9 @@
 			</div>
 		</section>
 		<section id="page2" class="section page" data-anchor="2nd">
-			 <div class="youtube">
-			 	<!-- <iframe width="100%" height="100%" src="https://www.youtube.com/embed/xFrL29o-r3I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-			 	<video src="images/video_01.mp4" data-keepplaying muted autoplay loop></video>
-			 	<!-- controls allowfullscreen-->
-			 </div>
+			<video src="images/video_01.mp4" data-keepplaying muted autoplay loop></video>
 		</section>
-		<section id="page3" class="section page" data-anchor="3rd">
+		<!-- <section id="page3" class="section page" data-anchor="3rd">
 			<div class="slide">
 				<div class="sView1">
 					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, numquam.
@@ -125,7 +133,7 @@
 					</a>
 				</div>
 			</div>
-		</section>
+		</section> -->
 		<section id="page4" class="section page" data-anchor="4st">
 			<div class="products clearfix">
 				<div class="img_1">
