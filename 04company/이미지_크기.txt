@@ -1,0 +1,16 @@
+#content_2 .box_c3 .name{width: 271px;height: 39px;}
+#content_2 .box_c3 .comment{width: 268px;height: 125px;}
+
+#content_2 .box_c5 .name{width: 147px;height: 32px;}
+#content_2 .box_c5 .comment{/*margin-top: -10px;*/width: 267px;height: 155px;}
+
+#content_2 .box_c7 .name{width: 142px;height: 39px;}
+#content_2 .box_c7 .comment{width: 272px;height: 121px;}
+
+
+
+.sub2_wrap:nth-child(1) img{width: 121px;height: 180px;}
+	.sub2_wrap:nth-child(2) img{width: 177px;height: 170px;}
+	.sub2_wrap:nth-child(3) img{width: 200px;height: 141px;}
+
+#sub02_txt img{margin-top: 25px;width: 400px;height: 120px;}
