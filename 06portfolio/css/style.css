@@ -14,7 +14,7 @@ img{display: block;}
 	.page{background-repeat:no-repeat;
 		background-position: center;
 		background-size:cover;}
-	#page1{background-image:url(../images/bg_01.jpg);}
+	#page1{background-image:url(../images/bg_00.jpg);}
 	#page2{background-color: coral;}
 	#page3{background-color: lightpink;}
 	#page4{background-color: lightblue;}
@@ -24,6 +24,7 @@ img{display: block;}
 #wrap_01{width: 80%;height: 80%;
 	position: absolute;top: 50%;left: 50%;
 	transform: translate(-50%,-50%);
-	border: 3px solid #ee5c07;
-	border-radius: 15px;
-	background-color: #333;}
+	background-color: rgba(0,0,0,0.2);}
+#wrap_01 h3{font-size: 3em;
+	color: #fff;
+	position: absolute;left: 40px;bottom: 30px;}
