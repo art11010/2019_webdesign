@@ -14,10 +14,12 @@ img{display: block;}
 	.page{background-repeat:no-repeat;
 		background-position: center;
 		background-size:cover;}
-	#page1{background-image:url(../images/bg_00.jpg);}
-	#page2{background-color: coral;}
-	#page3{background-color: lightpink;}
-	#page4{background-color: lightblue;}
+	#page1{background-image:url(../images/bg_01.jpg);}
+	#page2{}
+	#page3{}
+	#page4{}
+	#page5{}
+	#page6{background-image:url(../images/bg_02.jpg);}
 
 /*page1*/
 #page1{position: relative;}
