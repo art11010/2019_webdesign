@@ -12,11 +12,12 @@ body,html{width: 100%;height: 100%;
 a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*style*/
-#wrapper{width: 100%;height: 100%;}
-	.page{
-		background-repeat:no-repeat;
+#wrapper{width: 100%;height: 100vh;}
+	/*.page{background-repeat:no-repeat;
 		background-position: center;
+		background-size:cover;}*/
+	#page1{width: 100%;height: 100vh;
+		background:url(../img/bg_01.jpg) no-repeat center;
 		background-size:cover;}
-	#page1{width: 1920px;height: 1080px;background:url(../img/bg_01.jpg);}
-	/*#page2{width: 100%;height: 100%;background:url(../img/bg_01.jpg);}*/
+	#page2{width: 100%;height: 100vh;background:url(../img/bg_02.jpg);}
 	#page3{}
