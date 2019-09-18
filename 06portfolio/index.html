@@ -3,20 +3,56 @@
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta charset="UTF-8">
-	<title>문서 제목</title>
+	<title>PORTFOLIO</title>
 	<link href="https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/script.js"></script>
+	<style>
+    	div {margin-bottom:1000px;}
+	</style>
+	<script>
+	    function fnMove(seq){
+	        var offset = $("#div" + seq).offset();
+	        $('html, body').animate({scrollTop : offset.top}, 400);
+	    }
+	</script>
 </head>
 <body>
-	<div id="wrapper" style="display: none">
-		<div class="toggle">
-			<a href="#">
-				<img src="img/menu.png" alt="menu">
-			</a>
-		</div>
+	<button onclick="fnMove('1')">div1로 이동</button>
+    <button onclick="fnMove('2')">div2로 이동</button>
+    <button onclick="fnMove('3')">div3로 이동</button>
+    <div id="div1">div1</div>
+    <div id="div2">div2</div>
+    <div id="div3">div3</div>
+
+
+
+
+
+	<div class="toggle">
+		<a href="#">
+			<img src="img/menu.png" alt="menu">
+		</a>
+	</div>
+	<div class="pager">
+		<ul>
+			<li>
+				<a href="page1">about</a>
+			</li>
+			<li>
+				<a href="page2">member</a>
+			</li>
+			<li>
+				<a href="portfolio">portfolio</a>
+			</li>
+			<li>
+				<a href="contact">contact</a>
+			</li>
+		</ul>
+	</div>
+	<div id="wrapper">
 		<div id="page1">
 			<div class="intro">
 				<p>WEB Designer & Publisher</p>
@@ -54,22 +90,6 @@
 		</div>
 		<!-- <div id="page3"></div>
 		<div id="page4"></div> -->
-	</div>
-	<div id="background">
-		<ul>
-			<li>
-				<div class="back"></div>
-			</li>
-			<li>
-				<div class="back"></div>
-			</li>
-			<li>
-				<div class="back"></div>
-			</li>
-			<li>
-				<div class="back"></div>
-			</li>
-		</ul>
 	</div>
 </body>
 </html>
