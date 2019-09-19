@@ -10,47 +10,30 @@
 	<script src="js/jquery.mousewheel.min.js"></script>
 	<script src="js/script.js"></script>
 	<style>
-    	div {margin-bottom:1000px;}
+    	
 	</style>
 	<script>
-	    function fnMove(seq){
-	        var offset = $("#div" + seq).offset();
-	        $('html, body').animate({scrollTop : offset.top}, 400);
-	    }
+		
 	</script>
 </head>
 <body>
-	<button onclick="fnMove('1')">div1로 이동</button>
-    <button onclick="fnMove('2')">div2로 이동</button>
-    <button onclick="fnMove('3')">div3로 이동</button>
-    <div id="div1">div1</div>
-    <div id="div2">div2</div>
-    <div id="div3">div3</div>
-
-
-
-
-
 	<div class="toggle">
 		<a href="#">
 			<img src="img/menu.png" alt="menu">
 		</a>
 	</div>
-	<div class="pager">
-		<ul>
-			<li>
-				<a href="page1">about</a>
-			</li>
-			<li>
-				<a href="page2">member</a>
-			</li>
-			<li>
-				<a href="portfolio">portfolio</a>
-			</li>
-			<li>
-				<a href="contact">contact</a>
-			</li>
-		</ul>
+	<div id="pager">
+		<p id="btn01">about</p>
+		<p id="btn02">member</p>
+		<p id="btn03">portfolio
+			<div id="port">
+				<p id="pBtn01">port1</p>
+				<p id="pBtn02">port2</p>
+				<p id="pBtn03">port3</p>
+				<p id="pBtn04">port4</p>
+			</div>
+		</p>
+		<p id="btn04">contact</p>
 	</div>
 	<div id="wrapper">
 		<div id="page1">
@@ -70,6 +53,7 @@
 				</p>
 			</div>
 		</div>
+		<!-- <div class="next1"></div> -->
 		<div id="page2">
 			<div class="main02">
 				<ul class="clearfix">
@@ -88,8 +72,13 @@
 				</ul>
 			</div>
 		</div>
-		<!-- <div id="page3"></div>
-		<div id="page4"></div> -->
+		<div id="page3">
+			<div id="port01">1</div>
+			<div id="port02">2</div>
+			<div id="port03">3</div>
+			<div id="port04">4</div>
+		</div>
+		<div id="page4"></div>
 	</div>
 </body>
 </html>

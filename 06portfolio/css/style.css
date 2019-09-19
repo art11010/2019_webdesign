@@ -7,44 +7,27 @@ img{display: block;}
 .clearfix::before,
 .clearfix::after{content:'';display: block;clear:both;}
 
-body,html{width: 100%;height: 100%;
-	font-family: 'Black Han Sans',Arial,
+body,html{font-family: 'Black Han Sans',Arial,
 	sans-serif;font-weight: black;
-	/*cursor: url(../img/cursor.cur),auto;*/
-	position: relative;overflow: hidden;}
-/*a:hover{cursor: url(../img/hover.cur),auto;}*/
+	cursor: url(../img/cursor.cur),auto;}
+a:hover{cursor: url(../img/hover.cur),auto;}
+
 
 /*style*/
-#wrapper{width: 100%;height: 100%;
-	position: absolute;overflow: auto;}
 /*toggle*/
-.toggle{width: 100px;height: 100%;position: fixed;z-index: 1;
-	border-right: 2px solid;
+.toggle{width: 100px;height: 100%;position: fixed;z-index: 5;
+	border-right: 2px solid;_filter: blur(1px);
 	border-color: rgba(255,255,255,0.5);}
-.toggle img{width: 40px;position: fixed;top: 30px;left: 30px;}
-
-.pager{position: fixed;right: 30px;top: 50%;
-	transform: translateY(50%);z-index: 1;
-	cursor: pointer;}
-.pager li{margin-bottom: 20px;}
-/*.pager li{width: 15px;height: 15px;
-	margin-bottom: 20px;
-	border-radius: 7.5px;
-	background-color: #808080;}*/
-
-
-/*page1*/
-#page1{width: 100%;height: 100%;
-	background:url(../img/bg_01.jpg) no-repeat center;
-	background-size:cover;}
+.toggle img{width: 40px;position: fixed;
+	top: 30px;left: 30px;}
 
 /*intro*/
 .intro{display: none;
 	width: 100%;height: 100%;
-	position: fixed;
+	position: fixed;z-index: 6;
 	color: #fff;
 	background-color: rgba(0,0,0,0.3);
-	cursor: pointer;}
+	cursor: url(../img/click.cur);}
 .intro p{position: absolute;
 	bottom: 300px;left: 200px;
 	font-size: 50px;}
@@ -52,30 +35,74 @@ body,html{width: 100%;height: 100%;
 	bottom: 75px;left: 200px;
 	font-size: 80px;}
 
+/*pager*/
+#pager{position: fixed;right: 30px;top: 50%;
+	transform: translateY(50%);z-index: 5;
+	cursor: pointer;}
+#pager > p{margin-bottom: 20px;}
+#pager > p:nth-child(3){position: relative;}
+#port{display: none;
+	position: absolute;top: 70px;left: -120px;
+	width: 100px;height: 140px;
+	border-radius: 25px;
+	background-color: rgba(255,255,255,0.8);}
+#port > p{line-height: 30px;text-align: center;}
+#port > p:nth-child(1){padding-top: 10px;}
+#port > p:nth-child(4){padding-bottom: 10px;}
+
+/*wrapper*/
+#wrapper{overflow: hidden;}
+#wrapper > div{}
+#page1,#page2,#page4{width: 100vw;height: 100vh;}
+
+#page3{width: 100vw;height: 100vh;font-size: 5em;text-align: center;}
+
+
+
+
+/*----------page1----------*/
+#page1{background:url(../img/bg_01.jpg) no-repeat center;
+	background-size:cover;}
+
 /*main01*/
-.main01{width: 100%;height: 100%;
-	position: relative;
+.main01{position: relative;
 	color:#808080;
-	display: none;}
+	_display: none;}
 .main01 p{position: absolute;
 	top: 50px;left: 150px;
 	line-height: 50px;
 	font-size: 35px;}
 
 /*----------page2----------*/
-#page2{width: 100%;height: 100%;
-	background:url(../img/bg_05.jpg) no-repeat center;
+#page2{background: url(../img/bg_05.jpg) no-repeat center;
 	background-size:cover;overflow: hidden;}
-.main02{width: 100%;margin: 0 auto;}
-.main02 ul{width: 1060px;margin: auto;}
-.main02 li{float: left;padding-top: 30%;}
-.main02 img{width: 250px;margin-top: 20px;margin-right: 20px;}
-.main02 li:nth-child(4) img{margin-right: 0px;}
+.main02{width: 1200px;height: 100%;margin: 0 auto;text-align: center;position: relative;}
+.main02 ul{position: absolute;top: 50%;
+	transform: translateY(-50%);}
+.main02 li{display: inline-block;width: 22%;margin-right: 3%;
+	border-radius: 50%;}
+.main02 li:last-child{margin-right: 0px;}
+.main02 img{width: 100%;
+	transition:.3s;_position:absolute;transform-origin:50% 0;}
+.main02 img:hover{transform:rotate(-45deg);}
+
+/*----------page3----------*/
+#page3{position: relative;}
+#page3 > div{position: absolute;width: 100vw;height: 100vh;}
+#port01{z-index: 3;background-color: pink;}
+#port02{z-index: 2;background-color: coral;}
+#port03{z-index: 1;background-color: skyblue;}
+#port04{background-color: gray;}
+
+
+/*----------page4----------*/
+#page4{background: url(../img/bg_06.jpg) no-repeat center;
+	background-size:cover;overflow: hidden;}
 
 
 
-	/*#page1 a{font-size: 3em;font-weight: black;}*/
-	/*#page2{width: 100%;height: 100vh;
-		background:url(../img/bg_03.jpg) no-repeat center;
-		background-size:cover;}
-	#page3{}*/
+
+/*--------------------next1--------------------*/
+.next1{width: 100%;height: 20vh;}
+.next1{background:url(../img/next_01.jpg) no-repeat center;
+	background-size:cover;}
