@@ -41,21 +41,19 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 	cursor: pointer;}
 #pager > p{margin-bottom: 20px;}
 #pager > p:nth-child(3){position: relative;}
-#port{display: none;
-	position: absolute;top: 70px;left: -120px;
+#pagerP{display: none;
+	position: absolute;top: 30px;left: -120px;
 	width: 100px;height: 140px;
 	border-radius: 25px;
 	background-color: rgba(255,255,255,0.8);}
-#port > p{line-height: 30px;text-align: center;}
-#port > p:nth-child(1){padding-top: 10px;}
-#port > p:nth-child(4){padding-bottom: 10px;}
+#pagerP > p{line-height: 30px;text-align: center;}
+#pagerP > p:nth-child(1){padding-top: 10px;}
+#pagerP > p:nth-child(4){padding-bottom: 10px;}
 
 /*wrapper*/
 #wrapper{overflow: hidden;}
 #wrapper > div{}
-#page1,#page2,#page4{width: 100vw;height: 100vh;}
-
-#page3{width: 100vw;height: 100vh;font-size: 5em;text-align: center;}
+#page1,#page2,#page3,#page4{width: 100vw;height: 100vh;}
 
 
 
@@ -70,8 +68,8 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 	_display: none;}
 .main01 p{position: absolute;
 	top: 50px;left: 150px;
-	line-height: 50px;
-	font-size: 35px;}
+	line-height: 4vw;
+	font-size: 3vw;}
 
 /*----------page2----------*/
 #page2{background: url(../img/bg_05.jpg) no-repeat center;
@@ -88,16 +86,23 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*----------page3----------*/
 #page3{position: relative;}
-#page3 > div{position: absolute;width: 100vw;height: 100vh;}
-#port01{z-index: 3;background-color: pink;}
-#port02{z-index: 2;background-color: coral;}
-#port03{z-index: 1;background-color: skyblue;}
-#port04{background-color: gray;}
+#port{width: 400vw;height: 100vh;
+	position: absolute;
+	font-size: 5em;text-align: center;}
+#port > div{float: left;width: 100vw;height: 100vh;}
+#port01{background: url(../img/bg_04.jpg) no-repeat center;
+	background-size:cover;}
+#port02{background: url(../img/bg_04.jpg) no-repeat center;
+	background-size:cover;}
+#port03{background: url(../img/bg_04.jpg) no-repeat center;
+	background-size:cover;}
+#port04{background: url(../img/bg_04.jpg) no-repeat center;
+	background-size:cover;}
 
 
 /*----------page4----------*/
 #page4{background: url(../img/bg_06.jpg) no-repeat center;
-	background-size:cover;overflow: hidden;}
+	background-size:cover;}
 
 
 
