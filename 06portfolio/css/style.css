@@ -37,7 +37,7 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*pager*/
 #pager{position: fixed;right: 30px;top: 50%;
-	transform: translateY(50%);z-index: 5;
+	_transform: translateY(50%);z-index: 5;
 	cursor: pointer;}
 #pager > p{margin-bottom: 20px;}
 #pager > p:nth-child(3){position: relative;}
@@ -69,7 +69,7 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 .main01 p{position: absolute;
 	top: 50px;left: 150px;
 	line-height: 4vw;
-	font-size: 3vw;}
+	font-size: 2.5vw;}
 
 /*----------page2----------*/
 #page2{background: url(../img/bg_05.jpg) no-repeat center;
@@ -101,7 +101,7 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 
 /*----------page4----------*/
-#page4{background: url(../img/bg_06.jpg) no-repeat center;
+#page4{background: url(../img/bg_06.jpg) no-repeat center left;
 	background-size:cover;}
 
 
