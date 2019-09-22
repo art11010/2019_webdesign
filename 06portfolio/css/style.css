@@ -7,9 +7,8 @@ img{display: block;}
 .clearfix::before,
 .clearfix::after{content:'';display: block;clear:both;}
 
-body,html{font-family: 'Black Han Sans',Arial,
-	sans-serif;font-weight: black;
-	cursor: url(../img/cursor.cur),auto;}
+body,html{font-family: 'Black Han Sans', Arial, sans-serif;
+	font-weight: black;cursor: url(../img/cursor.cur),auto;}
 a:hover{cursor: url(../img/hover.cur),auto;}
 
 
