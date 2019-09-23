@@ -49,6 +49,12 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 #pagerP > p:nth-child(1){padding-top: 10px;}
 #pagerP > p:nth-child(4){padding-bottom: 10px;}
 
+
+
+
+
+
+
 /*wrapper*/
 #wrapper{overflow: hidden;}
 #wrapper > div{}
@@ -85,6 +91,9 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*----------page3----------*/
 #page3{position: relative;}
+.prev{position: fixed;z-index: 10;top: 70%;left: 0;cursor: pointer;}
+.next{position: fixed;z-index: 2;top: 70%;right: 0;cursor: pointer;}
+
 #port{width: 400vw;height: 100vh;
 	position: absolute;
 	font-size: 5em;text-align: center;}

@@ -57,7 +57,28 @@ $(function(){
 	$("#pagerP p").click(function(){
 		var index = $(this).index();
 		i = index * "-100" + "vw";
-		console.log(i);
+		// console.log(i);
 		$("#port").animate({left:i},400);
+	});
+
+	// move
+	function move(){
+		u = current * "-100" + "vw";
+		console.log(u);
+		$("#port").animate({left:u},300);
+	}
+	$(".next").click(function(){
+		if(current <= 4){
+			current++;
+			if(current == 4){current = 0}
+		}
+		move();
+	});
+	$(".prev").click(function(){
+		if(current >= 0){
+			current--;
+			if(current == -1){current = 3;}
+		}
+		move();
 	});
 });
