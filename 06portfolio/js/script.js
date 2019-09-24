@@ -3,14 +3,23 @@ $(function(){
 	$("#btn01").click(function(){
 		var position = $("#page1").offset();
 		$("html").animate({scrollTop:position.top},500);
+		$("#pager li").removeClass("active");
+		$("#pager li").eq(0).addClass("active");
+		$(".btn").fadeOut("linear");
 	});
 	$("#btn02").click(function(){
 		var position = $("#page2").offset();
 		$("html").animate({scrollTop:position.top},500);
+		$("#pager li").removeClass("active");
+		$("#pager li").eq(1).addClass("active");
+		$(".btn").fadeOut("linear");
 	});
 	$("#btn03").click(function(){
 		var position = $("#page3").offset();
 		$("html").animate({scrollTop:position.top},500);
+		$("#pager li").removeClass("active");
+		$("#pager li").eq(2).addClass("active");
+		$(".btn").fadeIn("linear");
 	});
 		$("#pagerP p").click(function(){
 			var position = $("#page3").offset();
@@ -19,10 +28,36 @@ $(function(){
 	$("#btn04").click(function(){
 		var position = $("#page4").offset();
 		$("html").animate({scrollTop:position.top},500);
+		$("#pager li").removeClass("active");
+		$("#pager li").eq(3).addClass("active");
+		$(".btn").fadeOut("linear");
 	});
+	
+	// mousewheel
+	// $(window).scroll(function(){
+	// 	var winTop = $(this).scrollTop();
+	// 	console.log(winTop);
+	// 	if(winTop > 2800){
+	// 		$("#pager li").removeClass("active");
+	// 		$("#pager li").eq(3).addClass("active");
+	// 		$(".btn").fadeOut("linear");
+	// 	}else if(winTop > 1700){
+	// 		$("#pager li").removeClass("active");
+	// 		$("#pager li").eq(2).addClass("active");
+	// 		$(".btn").fadeIn("linear");
+	// 	}else if(winTop > 600){
+	// 		$("#pager li").removeClass("active");
+	// 		$("#pager li").eq(1).addClass("active");
+	// 		$(".btn").fadeOut("linear");
+	// 	}else{
+	// 		$("#pager li").removeClass("active");
+	// 		$("#pager li").eq(0).addClass("active");
+	// 		$(".btn").fadeOut("linear");
+	// 	}
+	// });
 
 	// menu slide
-	$("#btn03").mouseenter(function(){
+	$("#submenu03").mouseenter(function(){
 		$("#pagerP").stop().slideDown("linear");
 	}).mouseleave(function(){
 		$("#pagerP").stop().slideUp("linear");
@@ -35,6 +70,11 @@ $(function(){
 
 
 	// scroll
+	$('#wrapper').on('scroll touchmove mousewheel', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		return false;
+	});
 	$('.intro').on('scroll touchmove mousewheel', function(event) {
 		event.preventDefault();
 		event.stopPropagation();

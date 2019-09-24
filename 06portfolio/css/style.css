@@ -7,7 +7,7 @@ img{display: block;}
 .clearfix::before,
 .clearfix::after{content:'';display: block;clear:both;}
 
-body,html{font-family: 'Black Han Sans', Arial, sans-serif;
+body,html{font-family: /*'Black Han Sans',*/ Arial, sans-serif;
 	font-weight: black;cursor: url(../img/cursor.cur),auto;}
 a:hover{cursor: url(../img/hover.cur),auto;}
 
@@ -15,10 +15,9 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 /*style*/
 /*toggle*/
 .toggle{width: 100px;height: 100%;position: fixed;z-index: 5;
-	border-right: 2px solid;_filter: blur(1px);
-	border-color: rgba(255,255,255,0.5);}
-.toggle img{width: 40px;position: fixed;
-	top: 30px;left: 30px;}
+	_filter: blur(1px);}
+.toggle img{width: 25px;position: fixed;
+	top: 20px;left: 20px;}
 
 /*intro*/
 .intro{display: none;
@@ -35,11 +34,18 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 	font-size: 80px;}
 
 /*pager*/
-#pager{position: fixed;right: 30px;top: 50%;
-	_transform: translateY(50%);z-index: 5;
-	cursor: pointer;}
-#pager > p{margin-bottom: 20px;}
-#pager > p:nth-child(3){position: relative;}
+#pager{position: fixed;;z-index: 5;
+	bottom: 50px; left: 50%;
+	transform: translateX(-50%);}
+#pager ul{}
+#pager li{float: left;padding: 5px;cursor: url(../img/hover.cur),auto;}
+#pager li:hover a{margin: 0 3px;transform: rotate(15deg);transition: 0.3s;}
+#pager li.active a{margin: 0 3px;transform: rotate(15deg);transition: 0.3s;}
+#pager a{display: block;
+	width: 2px;height: 20px;
+	border-radius: 2px;
+	background-color: #333;}
+#pager li:nth-child(3){position: relative;}
 #pagerP{display: none;
 	position: absolute;top: 30px;left: -120px;
 	width: 100px;height: 140px;
@@ -49,18 +55,28 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 #pagerP > p:nth-child(1){padding-top: 10px;}
 #pagerP > p:nth-child(4){padding-bottom: 10px;}
 
-
-
-
+/*menu*/
+#menu{position: fixed;top: 30px;right: 150px;}
+#menu ul{}
+#menu li{float: left;padding: 0 25px;}
+#menu li:nth-child(4){padding-right: 0px;}
+#menu li:hover a{color: #c36b72;}
+#menu img{position: absolute;width: 120px;
+	top: -100px;
+	animation: rope 1.5s infinite ease-in-out alternate;}
+	@keyframes rope{
+		from{_top: -100px;transform: rotate(5deg);}
+		to{_top: -60px;transform: rotate(-5deg);}
+	}
 
 
 
 /*wrapper*/
 #wrapper{overflow: hidden;}
 #wrapper > div{}
-#page1,#page2,#page3,#page4{width: 100vw;height: 100vh;}
-
-
+#page1,#page3,#page4{width: 100vw;height: 100vh;}
+::-webkit-scrollbar {display:none;}
+#page2{width: 100vw;height: 110vh;}
 
 
 /*----------page1----------*/
@@ -69,15 +85,16 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*main01*/
 .main01{position: relative;
-	color:#808080;
+	color:#333;
 	_display: none;}
-.main01 p{position: absolute;
-	top: 50px;left: 150px;
-	line-height: 4vw;
-	font-size: 2.5vw;}
+.main01 p{font-family: 'Gaegu', cursive;
+	position: absolute;
+	top: 150px;left: 150px;
+	line-height: 40px/*4vw*/;
+	font-size: 30px/*2vw*/;}
 
 /*----------page2----------*/
-#page2{background: url(../img/bg_05.jpg) no-repeat center;
+#page2{background: url(../img/bg_02.jpg) no-repeat center;
 	background-size:cover;overflow: hidden;}
 .main02{width: 1200px;height: 100%;margin: 0 auto;text-align: center;position: relative;}
 .main02 ul{position: absolute;top: 50%;
@@ -91,25 +108,30 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 
 /*----------page3----------*/
 #page3{position: relative;}
-.prev{position: fixed;z-index: 10;top: 70%;left: 0;cursor: pointer;}
-.next{position: fixed;z-index: 2;top: 70%;right: 0;cursor: pointer;}
+.btn{display: none;}
+/*.btn.active{display: block;transition: 0.5s;}*/
+.btn img{width: 30px;}
+.prev{position: fixed;z-index: 10;
+	bottom: 55px;left: 45%;cursor: pointer;}
+.next{position: fixed;z-index: 2;
+	bottom: 55px;right: 45%;cursor: pointer;}
 
 #port{width: 400vw;height: 100vh;
 	position: absolute;
 	font-size: 5em;text-align: center;}
 #port > div{float: left;width: 100vw;height: 100vh;}
-#port01{background: url(../img/bg_04.jpg) no-repeat center;
+#port01{background: url(../img/bg_03.jpg) no-repeat center;
 	background-size:cover;}
-#port02{background: url(../img/bg_04.jpg) no-repeat center;
+#port02{background: url(../img/bg_03.jpg) no-repeat center;
 	background-size:cover;}
-#port03{background: url(../img/bg_04.jpg) no-repeat center;
+#port03{background: url(../img/bg_03.jpg) no-repeat center;
 	background-size:cover;}
-#port04{background: url(../img/bg_04.jpg) no-repeat center;
+#port04{background: url(../img/bg_03.jpg) no-repeat center;
 	background-size:cover;}
 
 
 /*----------page4----------*/
-#page4{background: url(../img/bg_06.jpg) no-repeat center left;
+#page4{background: url(../img/bg_04.jpg) no-repeat center left;
 	background-size:cover;}
 
 
@@ -118,4 +140,10 @@ a:hover{cursor: url(../img/hover.cur),auto;}
 /*--------------------next1--------------------*/
 .next1{width: 100%;height: 20vh;}
 .next1{background:url(../img/next_01.jpg) no-repeat center;
+	background-size:cover;}
+.next2{width: 100%;height: 20vh;margin-top: -20vh;}
+.next2{background:url(../img/next_02.png) no-repeat center;
+	background-size:cover;}
+.next3{width: 100%;height: 20vh;}
+.next3{background:url(../img/next_03.jpg) no-repeat center;
 	background-size:cover;}
