@@ -1,37 +1,16 @@
 $(function(){
 	// pager
-	$("#btn01").click(function(){
-		var position = $("#page1").offset();
-		$("html").animate({scrollTop:position.top},500);
-		$("#pager li").removeClass("active");
-		$("#pager li").eq(0).addClass("active");
-		$(".btn").fadeOut("linear");
-	});
-	$("#btn02").click(function(){
-		var position = $("#page2").offset();
-		$("html").animate({scrollTop:position.top},500);
-		$("#pager li").removeClass("active");
-		$("#pager li").eq(1).addClass("active");
-		$(".btn").fadeOut("linear");
-	});
-	$("#btn03").click(function(){
-		var position = $("#page3").offset();
-		$("html").animate({scrollTop:position.top},500);
-		$("#pager li").removeClass("active");
-		$("#pager li").eq(2).addClass("active");
-		$(".btn").fadeIn("linear");
-	});
+	// $("#btn01").click(function(){
+	// 	var position = $("#page1").offset();
+	// 	$("html").animate({scrollTop:position.top},500);
+	// 	$("#pager li").removeClass("active");
+	// 	$("#pager li").eq(0).addClass("active");
+	// 	$(".btn").fadeOut("linear");
+	// });
 		$("#pagerP p").click(function(){
 			var position = $("#page3").offset();
 			$("html").animate({scrollTop:position.top},500);
 		});
-	$("#btn04").click(function(){
-		var position = $("#page4").offset();
-		$("html").animate({scrollTop:position.top},500);
-		$("#pager li").removeClass("active");
-		$("#pager li").eq(3).addClass("active");
-		$(".btn").fadeOut("linear");
-	});
 	
 	// mousewheel
 	// $(window).scroll(function(){
@@ -55,6 +34,16 @@ $(function(){
 	// 		$(".btn").fadeOut("linear");
 	// 	}
 	// });
+
+
+	$("#pager > ul > li").click(function(){
+     var i = $(this).index()+1;
+     var position = $("#page"+i).offset();
+     console.log(position);
+     $("html").animate({scrollTop:position.top},500)
+     $("#pager > ul > li").removeClass("active").eq($(this).index()).addClass("active");
+     $(".btn").fadeOut("linear");
+   });
 
 	// menu slide
 	$("#submenu03").mouseenter(function(){
