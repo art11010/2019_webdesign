@@ -11,18 +11,20 @@ $(function(){
 	// mousewheel
 	$(window).scroll(function(){
 		var winTop = $(this).scrollTop();
-		var page1 = $("#page1").offset().top;
-		var page3 = $("#page3").offset().top;
+		var page1 = $("#page1").offset().top-500;
+		var page2 = $("#page2").offset().top-500;
+		var page3 = $("#page3").offset().top-500;
+		var page4 = $("#page4").offset().top-500;
 		console.log("1"+page1+"/ 2"+page3);
-		if(winTop > 2800){
+		if(winTop > page4){
 			$("#pager li").removeClass("active");
 			$("#pager li").eq(3).addClass("active");
 			$(".btn").fadeOut("linear");
-		}else if(winTop > 1700){
+		}else if(winTop > page3){
 			$("#pager li").removeClass("active");
 			$("#pager li").eq(2).addClass("active");
 			$(".btn").fadeIn("linear");
-		}else if(winTop > 600){
+		}else if(winTop > page2){
 			$("#pager li").removeClass("active");
 			$("#pager li").eq(1).addClass("active");
 			$(".btn").fadeOut("linear");
