@@ -67,11 +67,11 @@ text-shadow: 0 0 5px #fff,0 0 5px #fff,0 0 5px #fff;}
 	.slider_wrap li h3{}
 	.slider_wrap li.first{background:url(../images/mainimg03.jpg) no-repeat center;
 	background-size:cover;}
-	.slider_wrap li.second{background:url(../images/mainimg03.jpg) no-repeat center;
+	.slider_wrap li.second{background:url(../images/mainimg01.jpg) no-repeat center;
 	background-size:cover;}
 	.slider_wrap li.third{background:url(../images/mainimg03.jpg) no-repeat center;
 	background-size:cover;}
-	.slider_wrap li.fourth{background:url(../images/mainimg03.jpg) no-repeat center;
+	.slider_wrap li.fourth{background:url(../images/mainimg01.jpg) no-repeat center;
 	background-size:cover;}
 	.slider_wrap .slider_txt{width: 600px;position: absolute;
 		left: 50%;margin-left: -300px;top: 25%;
