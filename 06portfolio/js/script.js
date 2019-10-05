@@ -19,16 +19,23 @@ $(function(){
 	});
 	// scroll
 	var screen = 0;
-	var v;
 	$(window).mousewheel(function(event,delta){
-		
+		if(delta > 0){
+			if(screen <= 0) screen = 1;
+			screen--;
+			// console.log(screen);
+			var v = $("#wrapper > div").eq(screen).offset().top;
+			$("html").stop().animate({scrollTop:v},500);
+			$("#pager > ul > li").removeClass("active").eq(screen).addClass("active");
+		}else if(delta < 0){
+			if(screen >= 3) screen = 3;
+			screen++;
+			// console.log(screen);
+			var v = $("#wrapper > div").eq(screen).offset().top;
+			$("html").stop().animate({scrollTop:v},500);
+			$("#pager > ul > li").removeClass("active").eq(screen).addClass("active");
+		}
 	});
-
-
-
-
-
-	
 	// port
 	var current = 0;
 	var i;
