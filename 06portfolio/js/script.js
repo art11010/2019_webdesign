@@ -36,36 +36,6 @@ $(function(){
 			$("#pager > ul > li").removeClass("active").eq(screen).addClass("active");
 		}
 	});
-	// port
-	var current = 0;
-	var i;
-	$("#pagerP p").click(function(){
-		var index = $(this).index();
-		i = index * "-100" + "vw";
-		// console.log(i);
-		$("#port").animate({left:i},400);
-	});
-
-	// move
-	function move(){
-		u = current * "-100" + "vw";
-		// console.log(u);
-		$("#port").animate({left:u},300);
-	}
-	$(".next").click(function(){
-		if(current <= 4){
-			current++;
-			if(current == 4){current = 0}
-		}
-		move();
-	});
-	$(".prev").click(function(){
-		if(current >= 0){
-			current--;
-			if(current == -1){current = 3;}
-		}
-		move();
-	});
 
 	// line
 	function line(){
@@ -73,8 +43,14 @@ $(function(){
 		console.log(winTop);
 		if(winTop > 0){
 			$("#page1 li").removeClass("active");
+			$("#menu a").css({"color":"black"});
+			$("#pager a").css({"background-color":"black"});
+			$("#menu .logo img").attr({"src":"img/logo_b.png"});
 		}else{
 			$("#page1 li").eq(0).addClass("active");
+			$("#menu a").css({"color":"#d3caa3"});
+			$("#pager a").css({"background-color":"#d3caa3"});
+			$("#menu .logo img").attr({"src":"img/logo.png"});
 		}
 	}
 	$(window).scroll(function(){
@@ -82,12 +58,53 @@ $(function(){
 	});
 	line();
 
-	$("#menu li").eq(5).click(function(){
-		window.open(///D:/%EC%98%88%EC%A7%80/web/2019_webdesign/06portfolio/portfolio.pdf);
+	// page3
+	var movementStrength = 25;
+	var height = movementStrength / $(window).height();
+	var width = movementStrength / $(window).width();
+	$("#main3").mousemove(function(e){
+		var pageX = e.pageX - ($(window).width() / 2);
+		var pageY = e.pageY - ($(window).height() / 2);
+		var newvalueX = width * pageX * -1 - 25;
+		var newvalueY = height * pageY * -1 - 50;
+		console.log(pageY);
+		$('#main3').css("background-position", newvalueX+"px, "+newvalueY+"px");
 	});
+
+	// port
+	// var current = 0;
+	// var i;
+	// $("#pagerP p").click(function(){
+	// 	var index = $(this).index();
+	// 	i = index * "-100" + "vw";
+	// 	// console.log(i);
+	// 	$("#port").animate({left:i},400);
+	// });
+
+	// move
+	// function move(){
+	// 	u = current * "-100" + "vw";
+	// 	// console.log(u);
+	// 	$("#port").animate({left:u},300);
+	// }
+	// $(".next").click(function(){
+	// 	if(current <= 4){
+	// 		current++;
+	// 		if(current == 4){current = 0}
+	// 	}
+	// 	move();
+	// });
+	// $(".prev").click(function(){
+	// 	if(current >= 0){
+	// 		current--;
+	// 		if(current == -1){current = 3;}
+	// 	}
+	// 	move();
+	// });
+
+
+
 });
-
-
 
 
 
