@@ -6,7 +6,7 @@ $(function(){
 		// console.log(position);
 		$("html").animate({scrollTop:position.top},500)
 		$("#pager > ul > li").removeClass("active").eq($(this).index()).addClass("active");
-		// $(".btn").fadeOut("linear");
+		$(".btn").fadeOut("linear");
 	});
 	// pager
 	$("#pager > ul > li").click(function(){
@@ -49,7 +49,7 @@ $(function(){
 	// move
 	function move(){
 		u = current * "-100" + "vw";
-		console.log(u);
+		// console.log(u);
 		$("#port").animate({left:u},300);
 	}
 	$(".next").click(function(){
@@ -65,6 +65,25 @@ $(function(){
 			if(current == -1){current = 3;}
 		}
 		move();
+	});
+
+	// line
+	function line(){
+		var winTop = $(this).scrollTop();
+		console.log(winTop);
+		if(winTop > 0){
+			$("#page1 li").removeClass("active");
+		}else{
+			$("#page1 li").eq(0).addClass("active");
+		}
+	}
+	$(window).scroll(function(){
+		line();
+	});
+	line();
+
+	$("#menu li").eq(5).click(function(){
+		window.open(///D:/%EC%98%88%EC%A7%80/web/2019_webdesign/06portfolio/portfolio.pdf);
 	});
 });
 
