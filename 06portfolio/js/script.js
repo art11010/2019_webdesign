@@ -12,11 +12,31 @@ $(function(){
 	$("#pager > ul > li").click(function(){
 		var i = $(this).index()+1;
 		var position = $("#page"+i).offset();
-		console.log(position);
+		// console.log(position);
 		$("html").animate({scrollTop:position.top},500);
 		$("#pager > ul > li").removeClass("active").eq($(this).index()).addClass("active");
 		$(".btn").fadeOut("linear");
 	});
+	// btn
+	var btn = 0;
+	var up;
+	var down;
+	$(".up").click(function(){
+		up = (btn + 1) % 4;
+		var position = $("#page"+up).offset();
+		console.log(up);
+		$("html").animate({scrollTop:position.top},500);
+		btn = up
+	});
+	$(".down").click(function(){
+		down = (btn + 2) % 4;
+		var position = $("#page"+down).offset();
+		console.log(down);
+		$("html").animate({scrollTop:position.top},500);
+		btn = down
+	});
+
+
 	// scroll
 	var screen = 0;
 	$(window).mousewheel(function(event,delta){
@@ -40,7 +60,7 @@ $(function(){
 	// line
 	function line(){
 		var winTop = $(this).scrollTop();
-		console.log(winTop);
+		// console.log(winTop);
 		if(winTop > 0){
 			$("#page1 li").removeClass("active");
 			$("#menu a").css({"color":"black"});
@@ -67,8 +87,7 @@ $(function(){
 		var pageY = e.pageY - ($(window).height() / 2);
 		var newvalueX = width * pageX * -1 - 25;
 		var newvalueY = height * pageY * -1 - 50;
-		console.log(pageY);
-		$('#main3').css("background-position", newvalueX+"px, "+newvalueY+"px");
+		$('#main3').css("background-position", newvalueX+"px "+newvalueY+"px");
 	});
 
 	// port
