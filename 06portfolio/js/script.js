@@ -17,6 +17,7 @@ $(function(){
 			$("html").stop().animate({scrollTop:v},500);
 			$("#pager > ul > li").removeClass("active").eq(screen).addClass("active");
 
+			$("#pager a").css({"background-color":"#d3caa3"});
 			$("#btn p").css({"color":"#d3caa3"});
 			$("#btn .line").css({"background-color":"#d3caa3"});
 			$(".up img").attr({"src":"img/up.png"});
@@ -53,8 +54,8 @@ $(function(){
 		$("html").animate({scrollTop:position.top},500);
 	});
 
-// line
-	function line(){
+// color
+	function color(){
 		var winTop = $(this).scrollTop();
 		// console.log(winTop);
 		if(winTop > 0){
@@ -80,10 +81,11 @@ $(function(){
 		}
 	}
 	$(window).scroll(function(){
-		line();
+		color();
 	});
-	line();
+	color();
 
+// ------------------------------------------------------------------------
 // page3
 	var movementStrength = 25;
 	var height = movementStrength / $(window).height();
@@ -106,6 +108,14 @@ $(function(){
 	// 	$("#port").animate({left:i},400);
 	// });
 });
+
+
+
+
+
+
+
+
 
 
 
