@@ -89,7 +89,18 @@ $(function(){
 	});
 	color();
 
-// ------------------------------------------------------------------------
+// --------------------------------------------------------------
+// page1
+	var movementStrength = 25;
+	var height = movementStrength / $(window).height();
+	var width = movementStrength / $(window).width();
+	$("#main1").mousemove(function(e){
+		var pageX = e.pageX - ($(window).width() / 2);
+		var pageY = e.pageY - ($(window).height() / 2);
+		var newvalueX = width * pageX * -1 - 25;
+		var newvalueY = height * pageY * -1 - 100;
+		$("#main1").css("background-position", newvalueX+"px "+newvalueY+"px");
+	});
 // page3
 	var movementStrength = 25;
 	var height = movementStrength / $(window).height();
@@ -99,18 +110,9 @@ $(function(){
 		var pageY = e.pageY - ($(window).height() / 2);
 		var newvalueX = width * pageX * -1 - 25;
 		var newvalueY = height * pageY * -1 + 10;
-		$('#main3').css("background-position", newvalueX+"px "+newvalueY+"px");
+		$("#main3").css("background-position", newvalueX+"px "+newvalueY+"px");
 	});
 
-	// port
-	// var current = 0;
-	// var i;
-	// $("#pagerP p").click(function(){
-	// 	var index = $(this).index();
-	// 	i = index * "-100" + "vw";
-	// 	// console.log(i);
-	// 	$("#port").animate({left:i},400);
-	// });
 // page4
 // 1
 	$("#main4 li").eq(0).mouseenter(function(){
@@ -185,6 +187,30 @@ $(function(){
 		$("#main4 li").eq(3).find(".txt01").css({color:"#000","text-shadow":"none"});
 		$("#main4 li").eq(3).find(".txt02").css({color:"#808080"});
 		$("#main4 li").eq(3).find("a").css({color:"#808080","border":"1px solid #000"});
+	});
+// mid page
+	$("#main4 li").click(function(){
+		var num = $(this).index();
+		console.log(num);
+		var aTag = ".a_"+num;
+		console.log(aTag);
+		$(aTag).click(function(){
+			$("#mid_page li").eq(num).stop().animate({"width":"100%"});
+			$("#mid_page li").eq(num).find("h2").show();
+			$("#mid_page li").eq(num).find("p").show();
+			$("#mid_page li").eq(num).find("a").show();
+			$("#mid_page li").eq(num).find("img").show();
+			$("#mid_page li").eq(num).find(".close").show();
+			// $("#btn .line").css({"background-color":"black"});
+		});
+		$(".close").eq(num).click(function(){
+			$("#mid_page li").stop().animate({"width":0});
+			$("#mid_page h2").hide();
+			$("#mid_page p").hide();
+			$("#mid_page a").hide();
+			$("#mid_page img").hide();
+			$("#mid_page .close").hide();
+		});
 	});
 });
 
