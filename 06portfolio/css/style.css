@@ -151,8 +151,8 @@ body,html{font-family: Arial, sans-serif;
 	#main2 p{text-align: left;
 		font-size: 1.2vw;}
 	#main2 img{width: 250px;margin: 20px auto;
-		transform: scale(25) rotate(45deg);
-		transition: linear 1s;}
+		transform: scale(25) rotate(180deg);
+		transition: ease-in-out 1s;}
 	#main2 img.active{width: 250px;margin: 20px auto;transform: scale(1);}
 
 
@@ -322,6 +322,7 @@ body,html{font-family: Arial, sans-serif;
 
 	#main5 li:nth-child(3){padding-top: 6.5vh;}
 	#main5 li:nth-child(3) p{display: inline;line-height: 3vw;}
+	#main5 li:nth-child(3) a{display: inline;color: #d3caa3;}
 	#main5 li:nth-child(3) img{display: inline;margin-right: 10px;
 		width: 15px;}
 
