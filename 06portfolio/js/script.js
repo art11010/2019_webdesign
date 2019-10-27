@@ -95,9 +95,9 @@ $(function(){
 		$("#main2 h2").addClass("active");
 		$("#main2 img").addClass("active");
 	});
-	$("#page2").mouseout(function(){
+	$("#page2").mouseleave(function(){
 		$("#main2 h2").removeClass("active");
-		$("#main2 img").removeClass("active");
+		$("#main2 img").removeClass("active").css({"animation-delay":"0s","opacity":"1"});
 	});
 // page3
 	var movementStrength = 25;

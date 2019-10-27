@@ -126,7 +126,7 @@ body,html{font-family: Arial, sans-serif;
 	#main2{position: absolute;top: 45%;left: 50%;
 		transform: translate(-50%,-50%);}
 	#main2 h2{text-align: center;font-size: 2.5vw;}
-	#main2 h2 span{letter-spacing: -10px;}
+	#main2 h2 span{letter-spacing: -7px;}
 	#main2 h2.active span{display: inline-block;
 			animation:create 1s forwards;
 			opacity: 0;}
@@ -149,13 +149,14 @@ body,html{font-family: Arial, sans-serif;
 		}
 	#main2 p{text-align: left;
 		font-size: 1.2vw;}
-	#main2 img{width: 250px;margin: 20px auto;
-		/*transform: scale(25) rotate(180deg);*/
-		transition: ease-in-out 1s;}
-	/*#main2 img.active{width: 250px;margin: 20px auto;transform: scale(1);}*/
-
-
-
+	#main2 img{width: 250px;margin: 20px auto;opacity: 0;}
+	#main2 img.active{animation:paint 2s forwards;
+		animation-delay: 3s;
+		opacity: 0;}
+		@keyframes paint{
+			from{opacity: 0;}
+			to{opacity: 1;}
+		}
 
 
 /*----------page3----------*/
