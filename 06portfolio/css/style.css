@@ -203,7 +203,7 @@ body,html{font-family: Arial, sans-serif;
 	#main4 li:nth-child(1) .box{width: 0;height: 100%;
 		position: absolute;top: 0;left: 0;
 		background-color: #632475;z-index: -1;}
-	#main4 li:nth-child(1) img{width: 400px;position: absolute;
+	#main4 li:nth-child(1) img{display: none;width: 400px;position: absolute;
 		top: 40%;left: -110%;z-index: 1;}
 /*2*/
 	#main4 li:nth-child(2){position: relative;overflow: hidden;

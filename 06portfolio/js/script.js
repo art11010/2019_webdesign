@@ -120,15 +120,15 @@ $(function(){
 // page4
 // 1
 	$("#main4 li").eq(0).mouseenter(function(){
-		$("#main4 li").eq(0).find(".box").stop().animate({"width":"100%"},600);
-		$("#main4 li").eq(0).find("img").stop().animate({left:"50%"},600);
+		$("#main4 li").eq(0).find(".box").stop().animate({"width":"100%"},500);
+		$("#main4 li").eq(0).find("img").show().stop().animate({left:"50%"},500);
 		$("#main4 li").eq(0).find("h2").css({color:"#fff"});
 		$("#main4 li").eq(0).find("p").css({color:"#fff"});
 		$("#main4 li").eq(0).find("a").css({color:"#fff","border":"1px solid #fff"});
 	});
 	$("#main4 li").eq(0).mouseleave(function(){
-		$("#main4 li").eq(0).find(".box").stop().animate({"width":0},600);
-		$("#main4 li").eq(0).find("img").stop().animate({left:"-110%"},600);
+		$("#main4 li").eq(0).find(".box").stop().animate({"width":0},500);
+		$("#main4 li").eq(0).find("img").hide().stop().animate({left:"-110%"},500);
 		$("#main4 li").eq(0).find("h2").css({color:"#ccc"});
 		$("#main4 li").eq(0).find(".txt01").css({color:"#000"});
 		$("#main4 li").eq(0).find(".txt02").css({color:"#808080"});
@@ -140,16 +140,16 @@ $(function(){
 // 2
 	$("#main4 li").eq(1).mouseenter(function(){
 		$("#main4 li").eq(1).css({"overflow":"visible"});
-		$("#main4 li").eq(1).find(".box").stop().animate({"width":"100%"});
-		$("#main4 li").eq(1).find("img").show().stop().animate({left:"65%"});
+		$("#main4 li").eq(1).find(".box").stop().animate({"width":"100%"},500);
+		$("#main4 li").eq(1).find("img").show().stop().animate({left:"65%"},500);
 		$("#main4 li").eq(1).find("h2").css({color:"#4d4d4d"});
 		$("#main4 li").eq(1).find("p").css({color:"#4d4d4d"});
 		$("#main4 li").eq(1).find("a").css({color:"#4d4d4d","border":"1px solid #4d4d4d"});
 	});
 	$("#main4 li").eq(1).mouseleave(function(){
 		$("#main4 li").eq(1).css({"overflow":"hidden"});
-		$("#main4 li").eq(1).find(".box").stop().animate({"width":0});
-		$("#main4 li").eq(1).find("img").hide().stop().animate({left:"-30%"});
+		$("#main4 li").eq(1).find(".box").stop().animate({"width":0},500);
+		$("#main4 li").eq(1).find("img").hide().stop().animate({left:"-30%"},500);
 		$("#main4 li").eq(1).find("h2").css({color:"#ccc"});
 		$("#main4 li").eq(1).find(".txt01").css({color:"#000"});
 		$("#main4 li").eq(1).find(".txt02").css({color:"#808080"});
@@ -158,16 +158,16 @@ $(function(){
 // 3
 	$("#main4 li").eq(2).mouseenter(function(){
 		$("#main4 li").eq(2).css({"overflow":"visible"});
-		$("#main4 li").eq(2).find(".box").stop().animate({"width":"100%"});
-		$("#main4 li").eq(2).find("img").show().stop().animate({left:"70%"});
+		$("#main4 li").eq(2).find(".box").stop().animate({"width":"100%"},500);
+		$("#main4 li").eq(2).find("img").show().stop().animate({left:"70%"},500);
 		$("#main4 li").eq(2).find("h2").css({color:"#fff"});
 		$("#main4 li").eq(2).find("p").css({color:"#fff"});
 		$("#main4 li").eq(2).find("a").css({color:"#fff","border":"1px solid #fff"});
 	});
 	$("#main4 li").eq(2).mouseleave(function(){
 		$("#main4 li").eq(2).css({"overflow":"hidden"});
-		$("#main4 li").eq(2).find(".box").stop().animate({"width":0});
-		$("#main4 li").eq(2).find("img").hide().stop().animate({left:"-40%"});
+		$("#main4 li").eq(2).find(".box").stop().animate({"width":0},500);
+		$("#main4 li").eq(2).find("img").hide().stop().animate({left:"-40%"},500);
 		$("#main4 li").eq(2).find("h2").css({color:"#ccc"});
 		$("#main4 li").eq(2).find(".txt01").css({color:"#000"});
 		$("#main4 li").eq(2).find(".txt02").css({color:"#808080"});
@@ -176,7 +176,7 @@ $(function(){
 // 4
 	$("#main4 li").eq(3).mouseenter(function(){
 		$("#main4 li").eq(3).css({"overflow":"visible"});
-		$("#main4 li").eq(3).find(".box").stop().animate({"width":"100%"});
+		$("#main4 li").eq(3).find(".box").stop().animate({"width":"100%"},500);
 		// $("#main4 li").eq(3).find("img").show().stop().animate({left:"70%"});
 		$("#main4 li").eq(3).find("h2").css({color:"#fff"});
 		$("#main4 li").eq(3).find(".txt01").css({color:"#fff","text-shadow":"4px 3px 1px #aaa"});
@@ -185,7 +185,7 @@ $(function(){
 	});
 	$("#main4 li").eq(3).mouseleave(function(){
 		$("#main4 li").eq(3).css({"overflow":"hidden"});
-		$("#main4 li").eq(3).find(".box").stop().animate({"width":0});
+		$("#main4 li").eq(3).find(".box").stop().animate({"width":0},500);
 		// $("#main4 li").eq(3).find("img").hide().stop().animate({left:"-30%"});
 		$("#main4 li").eq(3).find("h2").css({color:"#ccc"});
 		$("#main4 li").eq(3).find(".txt01").css({color:"#000","text-shadow":"none"});
